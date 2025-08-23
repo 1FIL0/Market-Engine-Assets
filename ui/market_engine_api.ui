@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+	background-color: rgb(0, 0, 0);
+}
+
+QWidget {
+padding: 10px;
+}
+
+QPushButton{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QPushButton::hover{
+	background-color: rgb(99, 140, 24);
+}
+
+QPushButton::pressed{
+	background-color: rgb(129, 34, 17);
+}
+
+QScrollArea{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+
+QTextEdit{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QCheckBox{
+padding:0;
+color: rgb(255, 255, 255);
+}
+QCheckBox::checked{
+color: rgb(99, 140, 24);
+}
+
+QCheckBox::unchecked{
+color: rgb(125, 27, 29);
+}
+
+QCheckBox::indicator{
+border-radius: 5px;
+border: 1px solid white;
+}
+
+QCheckBox::indicator::checked{
+border-color: rgb(99, 140, 24);
+image: url(:/icons/checked.png);
+width: 20px;
+height: 20px;
+}
+
+QCheckBox::indicator::unchecked{
+border-color: rgb(125, 27, 29);
+width: 20px;
+height: 20px;
+}
+
+QSpinBox{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QSpinBox::hover{
+background-color: rgb(99, 140, 24);
+}
+
+QSpinBox::clicked{
+background-color: rgb(129, 34, 17);
+}
+
+    QSpinBox::up-button {
+ subcontrol-position: center right;
+width:10px;
+height:10px;
+border-color: rgb(255, 255, 255);
+image: url(:/icons/spin_up_simple.png);
+margin-bottom:5px;
+margin-right:2px
+    }
+
+    QSpinBox::down-button {
+ subcontrol-position: center right;
+width:10px;
+height:10px;
+border-color: rgb(255, 255, 255);
+	image: url(:/icons/spin_down_simple.png);
+margin-top:5px;
+margin-right:2px
+    }
+
+QDoubleSpinBox{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QDoubleSpinBox::hover{
+background-color: rgb(99, 140, 24);
+}
+
+QDoubleSpinBox::clicked{
+background-color: rgb(129, 34, 17);
+}
+
+QComboBox{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+}
+
+QComboBox::hover{
+background-color: rgb(99, 140, 24);
+}
+
+QComboBox::clicked{
+background-color: rgb(129, 34, 17);
+}
+
+QComboBox::down-arrow{
+width:10px;
+height:10px;
+border-color: rgb(255, 255, 255);
+image: url(:/icons/dropdown_simple.png);
+}
+
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 20px;
+	border-left: 1px solid white;
+}
+
+QLabel{
+	color: rgb(255, 255, 255);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="tab" native="true">
+      <property name="styleSheet">
+       <string notr="true">#tab{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QWidget" name="tabButtonsTop" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2"/>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QWidget" name="tabButtonsMidTop" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="buttonTabHome">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../icons/market_engine_icons.qrc">
+              <normaloff>:/icons/home.png</normaloff>:/icons/home.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QWidget" name="tabButtonsMidBottom" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QPushButton" name="buttonTabSonar">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../icons/market_engine_icons.qrc">
+              <normaloff>:/icons/sonar_api.png</normaloff>:/icons/sonar_api.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignBottom">
+        <widget class="QWidget" name="tabButtonsBottom" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="buttonTabSettings">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../icons/market_engine_icons.qrc">
+              <normaloff>:/icons/settings.png</normaloff>:/icons/settings.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="centralStacked">
+      <property name="styleSheet">
+       <string notr="true">#centralStacked{
+padding:0px;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="stackedHome">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QWidget" name="centralHome" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QWidget" name="homeLeft" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_52">
+              <item>
+               <widget class="QWidget" name="homeMarketEngine" native="true">
+                <property name="styleSheet">
+                 <string notr="true">#homeMarketEngine{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;}
+
+</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_53">
+                 <item>
+                  <widget class="QWidget" name="widgetHomeTop" native="true">
+                   <property name="styleSheet">
+                    <string notr="true">#widgetHomeTop{
+	background-color: rgb(0, 0 ,0);
+	border-radius: 10px;
+border: 1px solid white
+}
+</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_55">
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QLabel" name="marketEngineIcon">
+                      <property name="maximumSize">
+                       <size>
+                        <width>175</width>
+                        <height>175</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <underline>false</underline>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="../icons/market_engine_icons.qrc">:/icons/market_engine_api.png</pixmap>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget_7" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_54">
+                       <item alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_33">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>27</pointsize>
+                           <weight>75</weight>
+                           <italic>false</italic>
+                           <bold>true</bold>
+                           <underline>false</underline>
+                           <strikeout>false</strikeout>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">padding: 0px;</string>
+                         </property>
+                         <property name="text">
+                          <string>Market Engine API</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QWidget" name="softwareInfo" native="true">
+                   <property name="styleSheet">
+                    <string notr="true">#softwareInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_50">
+                    <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                     <widget class="QLabel" name="label_29">
+                      <property name="font">
+                       <font>
+                        <family>SystemHud</family>
+                        <pointsize>20</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                        <underline>true</underline>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Current Build</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignBottom">
+                     <widget class="QWidget" name="softwareInfoLabels" native="true">
+                      <property name="styleSheet">
+                       <string notr="true">
+QLabel{
+padding:0;
+}</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_51">
+                       <item>
+                        <widget class="QLabel" name="label_30">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Version: 1.0.0</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_32">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                           <underline>false</underline>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Release Date: 22/04/2025</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_3">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>10000</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="socialMedias" native="true">
+                   <property name="styleSheet">
+                    <string notr="true">#socialMedias{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <widget class="QWidget" name="widget_5" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_19">
+                       <item>
+                        <widget class="QLabel" name="label_34">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>20</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                           <underline>true</underline>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Dev Socials</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QWidget" name="widget_6" native="true">
+                         <layout class="QHBoxLayout" name="horizontalLayout_15">
+                          <item>
+                           <widget class="QPushButton" name="buttonYoutube">
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="../icons/market_engine_icons.qrc">
+                              <normaloff>:/icons/youtube.png</normaloff>:/icons/youtube.png</iconset>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>32</width>
+                              <height>32</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="buttonDiscord">
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="../icons/market_engine_icons.qrc">
+                              <normaloff>:/icons/discord.png</normaloff>:/icons/discord.png</iconset>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>32</width>
+                              <height>32</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="buttonGithub">
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="../icons/market_engine_icons.qrc">
+                              <normaloff>:/icons/github.png</normaloff>:/icons/github.png</iconset>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>32</width>
+                              <height>32</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="homeRight" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_49">
+              <item alignment="Qt::AlignTop">
+               <widget class="QWidget" name="homeAdditionalInfo" native="true">
+                <property name="styleSheet">
+                 <string notr="true">#homeAdditionalInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;}
+
+</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_56">
+                 <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                  <widget class="QLabel" name="label_35">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>20</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Additional Info</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QWidget" name="widget_8" native="true">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+padding: 0;
+}</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_57">
+                    <item>
+                     <spacer name="verticalSpacer_7">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>10000</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="stackedSonar">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QWidget" name="centralSonar" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QWidget" name="sonarMain" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item alignment="Qt::AlignTop">
+               <widget class="QWidget" name="sonarStatusBox" native="true">
+                <property name="styleSheet">
+                 <string notr="true">#sonarStatusBox{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="sonarStatusL">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>20</pointsize>
+                     <weight>75</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Sonar Main Status</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+                  <widget class="QWidget" name="sonarStatusH" native="true">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                     <widget class="QStackedWidget" name="sonarStatusStacked">
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="sonarStatusStackedOnline">
+                       <property name="styleSheet">
+                        <string notr="true">#sonarStatusStackedOnline{
+	background-color: rgb(99, 140, 24);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item alignment="Qt::AlignHCenter">
+                         <widget class="QLabel" name="sonarStatusStackedOnlineL">
+                          <property name="font">
+                           <font>
+                            <family>SystemHud</family>
+                            <pointsize>15</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Online</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="sonarStatusStackedOffline">
+                       <property name="styleSheet">
+                        <string notr="true">#sonarStatusStackedOffline{
+	background-color: rgb(125, 27, 29);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_6">
+                        <item alignment="Qt::AlignHCenter">
+                         <widget class="QLabel" name="sonarStatusStackedOfflineL">
+                          <property name="font">
+                           <font>
+                            <family>SystemHud</family>
+                            <pointsize>15</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="text">
+                           <string>Offline</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="buttonSonarExec">
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="../icons/market_engine_icons.qrc">
+                        <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="buttonSonarEnd">
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="../icons/market_engine_icons.qrc">
+                        <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="sonarControlBox" native="true">
+                   <property name="styleSheet">
+                    <string notr="true">#sonarControlBox{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+
+*{
+padding:0
+}</string>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_18">
+                    <item>
+                     <widget class="QWidget" name="widget_4" native="true">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QLabel" name="label_13">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Uptime</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QLabel" name="sessionUptime">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>0 sec</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget" native="true">
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <widget class="QLabel" name="label_8">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Rescan interval</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QLabel" name="sessionPageDelay">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>0 hours</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sonarPanel" native="true">
+                <property name="styleSheet">
+                 <string notr="true">#sonarPanel{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="sonarPanelL">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>20</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                     <underline>true</underline>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Sonar Tools</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonCreateNewReadyItems">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Create new ready items</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonRefreshAdvancedDataItems">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Refresh Advanced data items</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="sonarRight" native="true">
+             <property name="styleSheet">
+              <string notr="true">#sonarRight{
+padding:0;
+}</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QStackedWidget" name="sonarOutputStacked">
+                <property name="styleSheet">
+                 <string notr="true">#sonarOutputStacked{
+padding: 0
+}</string>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="sonarOutputStackedMain">
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <widget class="QTextEdit" name="sonarMainOutput">
+                    <property name="font">
+                     <font>
+                      <family>Fira Code</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="sonarOutputStackedAdvancedData">
+                 <property name="font">
+                  <font>
+                   <family>Fira Code</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <widget class="QTextEdit" name="sonarAdvancedRefreshOutput">
+                    <property name="font">
+                     <font>
+                      <family>Fira Code</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="sonarOutputInfo" native="true">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#sonarOutputInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item alignment="Qt::AlignLeft">
+                  <widget class="QPushButton" name="sonarOutputLeftButton">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/left.png</normaloff>:/icons/left.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="sonarOutputInfoL">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>20</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                     <underline>true</underline>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Sonar Main Output</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QPushButton" name="sonarOutputRightButton">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/right.png</normaloff>:/icons/right.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="stackedSettings">
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QWidget" name="settingsLeft" native="true">
+          <property name="styleSheet">
+           <string notr="true">#settingsLeft{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <family>SystemHud</family>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>SETTINGS TAB</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="settingsButtonSonar">
+             <property name="font">
+              <font>
+               <family>SystemHud</family>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sonar Settings</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>511</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QStackedWidget" name="settingsStacked">
+          <property name="styleSheet">
+           <string notr="true">#settingsStacked{
+padding:0px;
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="settingsStackedSonar">
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <widget class="QScrollArea" name="settingsSonar">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="settingsSonarContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>615</width>
+                 <height>802</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#settingsSonarContents{
+	background-color: rgb(0, 0, 0);
+	border: transparent;
+	border-radius: 10px
+}
+</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item alignment="Qt::AlignTop">
+                 <widget class="QWidget" name="settingsSonarInterval" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">#settingsSonarInterval{
+	background-color: rgb(0, 0, 0);
+	border:  1px solid white;
+	border-radius: 10px
+}
+</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_24">
+                   <item>
+                    <widget class="QLabel" name="label_15">
+                     <property name="font">
+                      <font>
+                       <family>SystemHud</family>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                       <underline>true</underline>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>Rescan Inverval</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="rescanIntervalHours">
+                     <property name="font">
+                      <font>
+                       <family>SystemHud</family>
+                       <pointsize>15</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="suffix">
+                      <string> Hours</string>
+                     </property>
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignBottom">
+                 <widget class="QWidget" name="settingsSonarButtons" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">#settingsSonarButtons{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                   <item>
+                    <widget class="QPushButton" name="settingsSonarSave">
+                     <property name="font">
+                      <font>
+                       <family>SystemHud</family>
+                       <pointsize>15</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Save</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="settingsSonarDiscard">
+                     <property name="font">
+                      <font>
+                       <family>SystemHud</family>
+                       <pointsize>15</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Discard</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="settingsSonarDefault">
+                     <property name="font">
+                      <font>
+                       <family>SystemHud</family>
+                       <pointsize>15</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Default</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="settingsSonarInfo" native="true">
+              <property name="styleSheet">
+               <string notr="true">#settingsSonarInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_4">
+                 <property name="font">
+                  <font>
+                   <family>SystemHud</family>
+                   <pointsize>20</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                   <underline>true</underline>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Sonar Settings</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="settingsStackedServerSyncer">
+           <layout class="QVBoxLayout" name="verticalLayout_21">
+            <item>
+             <widget class="QScrollArea" name="settingsServerSyncer">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="settingsServerSyncerContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>46</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#settingsServerSyncerContents{
+	background-color: rgb(0, 0, 0);
+	border: transparent;
+	border-radius: 10px
+}
+</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="settingsServerSyncerInfo" native="true">
+              <property name="styleSheet">
+               <string notr="true">#settingsServerSyncerInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="label_7">
+                 <property name="font">
+                  <font>
+                   <family>SystemHud</family>
+                   <pointsize>20</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                   <underline>true</underline>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Server Syncer Settings</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/market_engine_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
