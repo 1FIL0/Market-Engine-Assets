@@ -418,23 +418,6 @@ padding:0;
                 </property>
                </widget>
               </item>
-              <item>
-               <widget class="QPushButton" name="buttonTabHelp">
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/help.png</normaloff>:/icons/help.png</iconset>
-                </property>
-                <property name="iconSize">
-                 <size>
-                  <width>32</width>
-                  <height>32</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
              </layout>
             </widget>
            </item>
@@ -453,13 +436,25 @@ padding:0;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="centralHome">
        <layout class="QHBoxLayout" name="horizontalLayout_35">
         <item>
          <widget class="QWidget" name="homeLeft" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_52">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QWidget" name="homeMarketEngine" native="true">
              <property name="styleSheet">
@@ -581,6 +576,9 @@ padding:0;
 }</string>
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_51">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QLabel" name="label_30">
                          <property name="font">
@@ -634,27 +632,6 @@ padding:0;
                         </spacer>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="buttonCheckUpdates">
-                         <property name="minimumSize">
-                          <size>
-                           <width>200</width>
-                           <height>0</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>SystemHud</family>
-                           <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Check for updates</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
                         <widget class="QPushButton" name="buttonGoToWebsite">
                          <property name="minimumSize">
                           <size>
@@ -672,6 +649,27 @@ padding:0;
                          </property>
                          <property name="text">
                           <string>Go to website</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="buttonGoToRepo">
+                         <property name="minimumSize">
+                          <size>
+                           <width>200</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Go to repository</string>
                          </property>
                         </widget>
                        </item>
@@ -802,6 +800,18 @@ padding:0;
         <item>
          <widget class="QWidget" name="homeRight" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_49">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QWidget" name="marketEngineStatus" native="true">
              <property name="styleSheet">
@@ -861,12 +871,12 @@ padding:2px;
                        </font>
                       </property>
                       <property name="text">
-                       <string>Server</string>
+                       <string>General</string>
                       </property>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QTextEdit" name="statusServer">
+                     <widget class="QTextEdit" name="statusGeneral">
                       <property name="font">
                        <font>
                         <family>SystemHud</family>
@@ -1039,6 +1049,18 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QWidget" name="sonarMain" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QWidget" name="sonarStatusBox" native="true">
              <property name="styleSheet">
@@ -1050,7 +1072,7 @@ p, li { white-space: pre-wrap; }
 </string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_7">
-              <item alignment="Qt::AlignTop">
+              <item alignment="Qt::AlignLeft|Qt::AlignTop">
                <widget class="QLabel" name="sonarStatusL">
                 <property name="font">
                  <font>
@@ -1063,7 +1085,7 @@ p, li { white-space: pre-wrap; }
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true"/>
+                 <string notr="true">padding-left: 0</string>
                 </property>
                 <property name="text">
                  <string>Sonar Status</string>
@@ -1076,6 +1098,18 @@ p, li { white-space: pre-wrap; }
                  <string notr="true"/>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignLeft|Qt::AlignTop">
                   <widget class="QStackedWidget" name="sonarStatusStacked">
                    <property name="styleSheet">
@@ -1203,6 +1237,9 @@ p, li { white-space: pre-wrap; }
                   <kerning>true</kerning>
                  </font>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">padding-left: 0</string>
+                </property>
                 <property name="text">
                  <string>Sonar Output</string>
                 </property>
@@ -1243,6 +1280,18 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QWidget" name="tradeupEngineMain" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_15">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QWidget" name="tradeupEngineStatusBox" native="true">
              <property name="styleSheet">
@@ -1267,7 +1316,7 @@ p, li { white-space: pre-wrap; }
                  </font>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true"/>
+                 <string notr="true">padding-left: 0</string>
                 </property>
                 <property name="text">
                  <string>Tradeup Engine</string>
@@ -1283,6 +1332,18 @@ p, li { white-space: pre-wrap; }
                  <string notr="true"/>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item alignment="Qt::AlignHCenter|Qt::AlignTop">
                   <widget class="QStackedWidget" name="tradeupEngineStatusStacked">
                    <property name="font">
@@ -1414,6 +1475,9 @@ p, li { white-space: pre-wrap; }
                   <underline>true</underline>
                  </font>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">padding-left: 0</string>
+                </property>
                 <property name="text">
                  <string>Tradeup Engine Output</string>
                 </property>
@@ -1459,6 +1523,18 @@ padding:0
 }</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_26">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QStackedWidget" name="stackedProfitableTradeups">
              <property name="styleSheet">
@@ -1468,13 +1544,37 @@ padding:0px;
 }</string>
              </property>
              <property name="currentIndex">
-              <number>0</number>
+              <number>3</number>
              </property>
              <widget class="QWidget" name="stackedProfitableTradeupsManager">
               <layout class="QVBoxLayout" name="verticalLayout_23">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QWidget" name="profitableTradeupsManagerCenter" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_27">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item>
                    <widget class="QWidget" name="profitableTradeupsManagerOverview" native="true">
                     <property name="styleSheet">
@@ -1486,6 +1586,18 @@ padding:0px;
 </string>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_22">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
                      <item alignment="Qt::AlignTop">
                       <widget class="QWidget" name="widget_19" native="true">
                        <layout class="QVBoxLayout" name="verticalLayout_90">
@@ -1499,6 +1611,9 @@ padding:0px;
                             <bold>true</bold>
                             <underline>true</underline>
                            </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">padding-left: 0</string>
                           </property>
                           <property name="text">
                            <string>Tradeup stats</string>
@@ -1561,6 +1676,18 @@ padding:0px;
 </string>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout_29">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
                      <item alignment="Qt::AlignTop">
                       <widget class="QWidget" name="widget_15" native="true">
                        <property name="styleSheet">
@@ -1577,6 +1704,9 @@ padding:0px;
                             <bold>true</bold>
                             <underline>true</underline>
                            </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">padding-left: 0</string>
                           </property>
                           <property name="text">
                            <string>Manage Tradeups</string>
@@ -1595,6 +1725,18 @@ padding:0px;
                               <string notr="true"/>
                              </property>
                              <layout class="QHBoxLayout" name="horizontalLayout_18">
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
                               <item>
                                <widget class="QCheckBox" name="profCheck">
                                 <property name="text">
@@ -1650,6 +1792,18 @@ padding:0px;
                            <item alignment="Qt::AlignLeft">
                             <widget class="QWidget" name="widget_18" native="true">
                              <layout class="QHBoxLayout" name="horizontalLayout_21">
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
                               <item>
                                <widget class="QCheckBox" name="chanceToProfCheck">
                                 <property name="text">
@@ -1766,6 +1920,18 @@ padding:0px;
              </widget>
              <widget class="QWidget" name="stackedProfitableTradeupsEntries">
               <layout class="QVBoxLayout" name="verticalLayout_67">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QWidget" name="profitableTradeupsEntiresCenter" native="true">
                  <property name="styleSheet">
@@ -1774,6 +1940,18 @@ padding: 0
 }</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_68">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item>
                    <widget class="QScrollArea" name="profitableTradeupsEntriesScroll">
                     <property name="widgetResizable">
@@ -1784,8 +1962,8 @@ padding: 0
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>64</width>
-                       <height>36</height>
+                       <width>963</width>
+                       <height>1185</height>
                       </rect>
                      </property>
                      <property name="styleSheet">
@@ -1795,12 +1973,37 @@ padding: 0
 }</string>
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout_71">
-                      <item alignment="Qt::AlignTop">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item alignment="Qt::AlignLeft|Qt::AlignTop">
                        <widget class="QWidget" name="profitableTradeupsEntriesScrollContents" native="true">
                         <property name="styleSheet">
                          <string notr="true"/>
                         </property>
-                        <layout class="QGridLayout" name="gridLayout_5"/>
+                        <layout class="QGridLayout" name="gridLayout_5">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                        </layout>
                        </widget>
                       </item>
                      </layout>
@@ -1814,6 +2017,18 @@ padding: 0
              </widget>
              <widget class="QWidget" name="stackedProfitableTradeupsTradeup">
               <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QWidget" name="tradeupCenter" native="true">
                  <property name="styleSheet">
@@ -1825,6 +2040,18 @@ padding: 0
 </string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item>
                    <widget class="QStackedWidget" name="tradeupStacked">
                     <property name="styleSheet">
@@ -1857,7 +2084,22 @@ padding:0
                         <layout class="QVBoxLayout" name="verticalLayout_86">
                          <item alignment="Qt::AlignTop">
                           <widget class="QWidget" name="widget_16" native="true">
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
                            <layout class="QVBoxLayout" name="verticalLayout_87">
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
                             <item alignment="Qt::AlignTop">
                              <widget class="QLabel" name="label_14">
                               <property name="font">
@@ -1868,6 +2110,9 @@ padding:0
                                 <bold>true</bold>
                                 <underline>true</underline>
                                </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">padding-left:0</string>
                               </property>
                               <property name="text">
                                <string>Tradeup Overview</string>
@@ -1880,6 +2125,18 @@ padding:0
                                <string notr="true"/>
                               </property>
                               <layout class="QVBoxLayout" name="verticalLayout_98">
+                               <property name="leftMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="topMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="bottomMargin">
+                                <number>0</number>
+                               </property>
                                <item>
                                 <widget class="QCheckBox" name="favouriteTradeupCheckbox">
                                  <property name="font">
@@ -2281,7 +2538,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
+                           <width>46</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2336,7 +2593,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
+                           <width>46</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2435,6 +2692,18 @@ padding:0px;
              </widget>
              <widget class="QWidget" name="stackedProfitableTradeupsNoTradeupFound">
               <layout class="QVBoxLayout" name="verticalLayout_47">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QWidget" name="noTradeupFound" native="true">
                  <property name="styleSheet">
@@ -2446,6 +2715,18 @@ padding:0px;
 </string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_46">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item>
                    <widget class="QWidget" name="widget_12" native="true">
                     <layout class="QVBoxLayout" name="verticalLayout_63">
@@ -2460,7 +2741,7 @@ padding:0px;
                         </font>
                        </property>
                        <property name="text">
-                        <string>No tradeup found, Select a tradeup from the entries tab</string>
+                        <string>-- No tradeup selected --</string>
                        </property>
                       </widget>
                      </item>
@@ -2578,6 +2859,18 @@ padding:0
 }</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_28">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item alignment="Qt::AlignTop">
             <widget class="QWidget" name="librarySearchBox" native="true">
              <property name="styleSheet">
@@ -2717,6 +3010,18 @@ padding:0;
                <string notr="true"/>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_54">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QScrollArea" name="scrollItemAllLibrary">
                  <property name="widgetResizable">
@@ -2727,8 +3032,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>46</width>
-                    <height>36</height>
+                    <width>963</width>
+                    <height>899</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -2755,7 +3060,20 @@ padding:0px;
 }
 </string>
                      </property>
-                     <layout class="QGridLayout" name="gridLayout_4"/>
+                     <layout class="QGridLayout" name="gridLayout_4">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                     </layout>
                     </widget>
                    </item>
                   </layout>
@@ -2832,6 +3150,18 @@ padding:0px;
              </widget>
              <widget class="QWidget" name="itemLibraryStackedModified">
               <layout class="QVBoxLayout" name="verticalLayout_73">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
                <item>
                 <widget class="QScrollArea" name="scrollItemModified">
                  <property name="widgetResizable">
@@ -2842,8 +3172,8 @@ padding:0px;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>64</width>
-                    <height>36</height>
+                    <width>963</width>
+                    <height>899</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -2871,7 +3201,20 @@ padding:0px;
 }
 </string>
                      </property>
-                     <layout class="QGridLayout" name="gridLayout"/>
+                     <layout class="QGridLayout" name="gridLayout">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                     </layout>
                     </widget>
                    </item>
                   </layout>
@@ -3098,6 +3441,18 @@ padding: 0px;
           </property>
           <widget class="QWidget" name="settingsStackedSonar">
            <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item>
              <widget class="QScrollArea" name="settingsSonar">
               <property name="styleSheet">
@@ -3111,8 +3466,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>46</width>
-                 <height>18</height>
+                 <width>698</width>
+                 <height>1133</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3220,6 +3575,18 @@ padding: 0px;
           </widget>
           <widget class="QWidget" name="settingsStackedCalculator">
            <layout class="QVBoxLayout" name="verticalLayout_19">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item>
              <widget class="QScrollArea" name="tradeupEngineSettings">
               <property name="widgetResizable">
@@ -3230,8 +3597,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>664</width>
-                 <height>1220</height>
+                 <width>684</width>
+                 <height>1184</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3241,9 +3608,33 @@ padding: 0px;
 }</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_30">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
                 <item alignment="Qt::AlignTop">
                  <widget class="QWidget" name="widget_5" native="true">
                   <layout class="QVBoxLayout" name="verticalLayout_77">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
                    <item>
                     <widget class="QWidget" name="tradeupEngineSettingsMode" native="true">
                      <property name="styleSheet">
@@ -3265,6 +3656,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Compute Mode</string>
@@ -3318,6 +3712,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>Active GPUS</string>
                         </property>
@@ -3369,6 +3766,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Input Rarities</string>
@@ -3493,6 +3893,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>input Categories</string>
                         </property>
@@ -3558,6 +3961,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Batch</string>
@@ -3674,6 +4080,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>Profitability</string>
                         </property>
@@ -3753,6 +4162,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>File</string>
                         </property>
@@ -3812,6 +4224,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Output</string>
@@ -3936,6 +4351,18 @@ padding: 0px;
           </widget>
           <widget class="QWidget" name="settingsStackedItemLibrary">
            <layout class="QVBoxLayout" name="verticalLayout_35">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item>
              <widget class="QScrollArea" name="settingsItemLibrary">
               <property name="styleSheet">
@@ -3949,8 +4376,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>544</width>
-                 <height>1087</height>
+                 <width>698</width>
+                 <height>1133</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3960,9 +4387,33 @@ padding: 0px;
 }</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_79">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
                 <item alignment="Qt::AlignTop">
                  <widget class="QWidget" name="widget_6" native="true">
                   <layout class="QVBoxLayout" name="verticalLayout_40">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
                    <item>
                     <widget class="QWidget" name="itemLibraryGrades" native="true">
                      <property name="styleSheet">
@@ -3984,6 +4435,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Filter Grades</string>
@@ -4120,6 +4574,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>Filter categories</string>
                         </property>
@@ -4194,6 +4651,9 @@ padding: 0px;
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Filter wears</string>
@@ -4300,6 +4760,9 @@ padding: 0px;
                           <underline>true</underline>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
                         <property name="text">
                          <string>Filter Collections</string>
                         </property>
@@ -4326,7 +4789,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>859</width>
+                           <width>854</width>
                            <height>628</height>
                           </rect>
                          </property>
@@ -5161,6 +5624,18 @@ padding:0
           </widget>
           <widget class="QWidget" name="settingsStackedUI">
            <layout class="QVBoxLayout" name="verticalLayout_75">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item>
              <widget class="QScrollArea" name="UISettings">
               <property name="widgetResizable">
@@ -5171,8 +5646,8 @@ padding:0
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>375</width>
-                 <height>269</height>
+                 <width>698</width>
+                 <height>1133</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -5182,9 +5657,33 @@ padding:0
 }</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_25">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
                 <item alignment="Qt::AlignTop">
                  <widget class="QWidget" name="widget_7" native="true">
                   <layout class="QVBoxLayout" name="verticalLayout_41">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
                    <item>
                     <widget class="QWidget" name="UISettingsTheme" native="true">
                      <property name="styleSheet">
@@ -5209,7 +5708,7 @@ padding:0
                          </font>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true"/>
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>THEME</string>
@@ -5258,6 +5757,9 @@ padding:0
                           <bold>true</bold>
                           <underline>true</underline>
                          </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
                         </property>
                         <property name="text">
                          <string>Output</string>
@@ -5405,12 +5907,36 @@ padding:0
       </widget>
       <widget class="QWidget" name="centralAccount">
        <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QWidget" name="centralAccountCenter" native="true">
           <property name="styleSheet">
            <string notr="true">#centralAccountCenter{ padding:0 }</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_26">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item alignment="Qt::AlignTop">
             <widget class="QWidget" name="accountInfo" native="true">
              <property name="styleSheet">
@@ -5431,6 +5957,18 @@ padding:0
                  <item alignment="Qt::AlignTop">
                   <widget class="QWidget" name="widget_20" native="true">
                    <layout class="QVBoxLayout" name="verticalLayout_59">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QLabel" name="label_20">
                       <property name="font">
@@ -5442,12 +5980,25 @@ padding:0
                         <underline>true</underline>
                        </font>
                       </property>
+                      <property name="styleSheet">
+                       <string notr="true">padding-left: 0</string>
+                      </property>
                       <property name="text">
                        <string>Account Status</string>
                       </property>
                      </widget>
                     </item>
-                    <item>
+                    <item alignment="Qt::AlignLeft">
+                     <widget class="QLabel" name="accountIcon">
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="pixmap">
+                       <pixmap resource="../icons/market_engine_icons.qrc">:/icons/dashboard.png</pixmap>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignLeft">
                      <widget class="QLabel" name="labelLoggedInStatus">
                       <property name="font">
                        <font>
@@ -5457,8 +6008,29 @@ padding:0
                         <bold>true</bold>
                        </font>
                       </property>
+                      <property name="styleSheet">
+                       <string notr="true">padding-left: 0</string>
+                      </property>
                       <property name="text">
                        <string>Currently Not Logged in to market engine</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="apiAccessLabel">
+                      <property name="font">
+                       <font>
+                        <family>SystemHud [unknown]</family>
+                        <pointsize>15</pointsize>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">padding-left:0</string>
+                      </property>
+                      <property name="text">
+                       <string>API Access disabled</string>
                       </property>
                      </widget>
                     </item>
