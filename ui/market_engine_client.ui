@@ -14,8 +14,8 @@
    <font>
     <family>SystemHud</family>
     <pointsize>15</pointsize>
-    <weight>75</weight>
-    <bold>true</bold>
+    <weight>50</weight>
+    <bold>false</bold>
    </font>
   </property>
   <property name="windowTitle">
@@ -66,6 +66,13 @@ QScrollArea{
 }
 
 QTextEdit{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+
+QLineEdit{
 	background-color: rgb(0, 0, 0);
 	border: 1px solid white;
 	border-radius: 10px;
@@ -513,10 +520,10 @@ border: 1px solid white;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>27</pointsize>
-                        <weight>75</weight>
+                        <weight>50</weight>
                         <italic>false</italic>
-                        <bold>true</bold>
-                        <underline>false</underline>
+                        <bold>false</bold>
+                        <underline>true</underline>
                         <strikeout>false</strikeout>
                        </font>
                       </property>
@@ -552,7 +559,7 @@ border: 1px solid white;
                      <widget class="QLabel" name="label_29">
                       <property name="font">
                        <font>
-                        <family>SystemHud [unknown]</family>
+                        <family>SystemHud</family>
                         <pointsize>20</pointsize>
                         <weight>50</weight>
                         <bold>false</bold>
@@ -585,8 +592,8 @@ padding:0;
                           <font>
                            <family>SystemHud</family>
                            <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
+                           <weight>50</weight>
+                           <bold>false</bold>
                           </font>
                          </property>
                          <property name="text">
@@ -600,13 +607,13 @@ padding:0;
                           <font>
                            <family>SystemHud</family>
                            <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
+                           <weight>50</weight>
+                           <bold>false</bold>
                            <underline>false</underline>
                           </font>
                          </property>
                          <property name="text">
-                          <string>Release Date: 22/04/2025</string>
+                          <string>Release Date: 01/09/2025</string>
                          </property>
                         </widget>
                        </item>
@@ -643,8 +650,8 @@ padding:0;
                           <font>
                            <family>SystemHud</family>
                            <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
+                           <weight>50</weight>
+                           <bold>false</bold>
                           </font>
                          </property>
                          <property name="text">
@@ -664,8 +671,8 @@ padding:0;
                           <font>
                            <family>SystemHud</family>
                            <pointsize>15</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
+                           <weight>50</weight>
+                           <bold>false</bold>
                           </font>
                          </property>
                          <property name="text">
@@ -695,6 +702,13 @@ padding:0;
                 <layout class="QVBoxLayout" name="verticalLayout_69">
                  <item alignment="Qt::AlignTop">
                   <widget class="QWidget" name="widget_10" native="true">
+                   <property name="font">
+                    <font>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                     <underline>false</underline>
+                    </font>
+                   </property>
                    <layout class="QVBoxLayout" name="verticalLayout_43">
                     <item>
                      <widget class="QLabel" name="label_34">
@@ -702,8 +716,8 @@ padding:0;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>20</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                         <underline>true</underline>
                        </font>
                       </property>
@@ -825,26 +839,13 @@ padding:0;
              <layout class="QVBoxLayout" name="verticalLayout_56">
               <item>
                <widget class="QWidget" name="widget_11" native="true">
+                <property name="font">
+                 <font>
+                  <underline>false</underline>
+                  <kerning>true</kerning>
+                 </font>
+                </property>
                 <layout class="QVBoxLayout" name="verticalLayout_44">
-                 <item>
-                  <widget class="QLabel" name="label_35">
-                   <property name="font">
-                    <font>
-                     <family>SystemHud</family>
-                     <pointsize>20</pointsize>
-                     <weight>75</weight>
-                     <bold>true</bold>
-                     <underline>true</underline>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">padding:0</string>
-                   </property>
-                   <property name="text">
-                    <string>Official Server status</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item>
                   <widget class="QWidget" name="statusServerBox" native="true">
                    <property name="styleSheet">
@@ -865,13 +866,13 @@ padding:2px;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>20</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                         <underline>true</underline>
                        </font>
                       </property>
                       <property name="text">
-                       <string>General</string>
+                       <string>Server status</string>
                       </property>
                      </widget>
                     </item>
@@ -881,12 +882,12 @@ padding:2px;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>15</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">#statusServer{
+                       <string notr="true">#statusGeneral{
 padding:10;
 border-color: rgb(99, 140, 24);
 }</string>
@@ -898,8 +899,8 @@ border-color: rgb(99, 140, 24);
                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No problems found&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                      </widget>
                     </item>
@@ -929,13 +930,13 @@ border: 1px solid white
                        <font>
                         <family>SystemHud</family>
                         <pointsize>20</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                         <underline>true</underline>
                        </font>
                       </property>
                       <property name="text">
-                       <string>API</string>
+                       <string>API Status</string>
                       </property>
                      </widget>
                     </item>
@@ -945,8 +946,8 @@ border: 1px solid white
                        <font>
                         <family>SystemHud</family>
                         <pointsize>15</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -962,8 +963,8 @@ border-color: rgb(99, 140, 24);
                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No problems found&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                      </widget>
                     </item>
@@ -989,8 +990,8 @@ padding:2px;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>20</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                         <underline>true</underline>
                        </font>
                       </property>
@@ -1005,8 +1006,8 @@ padding:2px;
                        <font>
                         <family>SystemHud</family>
                         <pointsize>15</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -1022,8 +1023,8 @@ border-color: rgb(99, 140, 24);
                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;No problems found&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                      </widget>
                     </item>
@@ -1078,9 +1079,9 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>20</pointsize>
-                  <weight>75</weight>
+                  <weight>50</weight>
                   <italic>false</italic>
-                  <bold>true</bold>
+                  <bold>false</bold>
                   <underline>true</underline>
                  </font>
                 </property>
@@ -1134,8 +1135,8 @@ p, li { white-space: pre-wrap; }
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -1161,8 +1162,8 @@ p, li { white-space: pre-wrap; }
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -1231,8 +1232,8 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>20</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                   <underline>true</underline>
                   <kerning>true</kerning>
                  </font>
@@ -1251,8 +1252,8 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="readOnly">
@@ -1262,7 +1263,7 @@ p, li { white-space: pre-wrap; }
                  <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;OUTPUT READY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
@@ -1309,9 +1310,9 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>20</pointsize>
-                  <weight>75</weight>
+                  <weight>50</weight>
                   <italic>false</italic>
-                  <bold>true</bold>
+                  <bold>false</bold>
                   <underline>true</underline>
                  </font>
                 </property>
@@ -1349,6 +1350,9 @@ p, li { white-space: pre-wrap; }
                    <property name="font">
                     <font>
                      <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
                     </font>
                    </property>
                    <property name="styleSheet">
@@ -1373,8 +1377,8 @@ p, li { white-space: pre-wrap; }
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -1400,8 +1404,8 @@ p, li { white-space: pre-wrap; }
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -1470,8 +1474,8 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>20</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                   <underline>true</underline>
                  </font>
                 </property>
@@ -1489,8 +1493,8 @@ p, li { white-space: pre-wrap; }
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="readOnly">
@@ -1500,7 +1504,7 @@ p, li { white-space: pre-wrap; }
                  <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;output ready&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
@@ -1544,7 +1548,7 @@ padding:0px;
 }</string>
              </property>
              <property name="currentIndex">
-              <number>3</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="stackedProfitableTradeupsManager">
               <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -1607,8 +1611,8 @@ padding:0px;
                            <font>
                             <family>SystemHud</family>
                             <pointsize>20</pointsize>
-                            <weight>75</weight>
-                            <bold>true</bold>
+                            <weight>50</weight>
+                            <bold>false</bold>
                             <underline>true</underline>
                            </font>
                           </property>
@@ -1632,8 +1636,8 @@ padding:0px;
                               <font>
                                <family>SystemHud</family>
                                <pointsize>15</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
+                               <weight>50</weight>
+                               <bold>false</bold>
                               </font>
                              </property>
                              <property name="text">
@@ -1647,8 +1651,8 @@ padding:0px;
                               <font>
                                <family>SystemHud</family>
                                <pointsize>15</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
+                               <weight>50</weight>
+                               <bold>false</bold>
                               </font>
                              </property>
                              <property name="text">
@@ -1700,8 +1704,8 @@ padding:0px;
                            <font>
                             <family>SystemHud</family>
                             <pointsize>20</pointsize>
-                            <weight>75</weight>
-                            <bold>true</bold>
+                            <weight>50</weight>
+                            <bold>false</bold>
                             <underline>true</underline>
                            </font>
                           </property>
@@ -1753,8 +1757,8 @@ padding:0px;
                                  <font>
                                   <family>SystemHud</family>
                                   <pointsize>15</pointsize>
-                                  <weight>75</weight>
-                                  <bold>true</bold>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
                                  </font>
                                 </property>
                                 <property name="prefix">
@@ -1777,8 +1781,8 @@ padding:0px;
                                  <font>
                                   <family>SystemHud</family>
                                   <pointsize>15</pointsize>
-                                  <weight>75</weight>
-                                  <bold>true</bold>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
                                  </font>
                                 </property>
                                 <property name="text">
@@ -1820,8 +1824,8 @@ padding:0px;
                                  <font>
                                   <family>SystemHud</family>
                                   <pointsize>15</pointsize>
-                                  <weight>75</weight>
-                                  <bold>true</bold>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
                                  </font>
                                 </property>
                                 <property name="prefix">
@@ -1841,8 +1845,8 @@ padding:0px;
                                  <font>
                                   <family>SystemHud</family>
                                   <pointsize>15</pointsize>
-                                  <weight>75</weight>
-                                  <bold>true</bold>
+                                  <weight>50</weight>
+                                  <bold>false</bold>
                                  </font>
                                 </property>
                                 <property name="text">
@@ -1859,8 +1863,8 @@ padding:0px;
                               <font>
                                <family>SystemHud</family>
                                <pointsize>15</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
+                               <weight>50</weight>
+                               <bold>false</bold>
                               </font>
                              </property>
                              <property name="styleSheet">
@@ -1877,8 +1881,8 @@ padding:0px;
                               <font>
                                <family>SystemHud</family>
                                <pointsize>15</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
+                               <weight>50</weight>
+                               <bold>false</bold>
                               </font>
                              </property>
                              <property name="styleSheet">
@@ -1895,8 +1899,8 @@ padding:0px;
                               <font>
                                <family>SystemHud</family>
                                <pointsize>15</pointsize>
-                               <weight>75</weight>
-                               <bold>true</bold>
+                               <weight>50</weight>
+                               <bold>false</bold>
                               </font>
                              </property>
                              <property name="text">
@@ -2106,8 +2110,8 @@ padding:0
                                <font>
                                 <family>SystemHud</family>
                                 <pointsize>20</pointsize>
-                                <weight>75</weight>
-                                <bold>true</bold>
+                                <weight>50</weight>
+                                <bold>false</bold>
                                 <underline>true</underline>
                                </font>
                               </property>
@@ -2143,8 +2147,8 @@ padding:0
                                   <font>
                                    <family>SystemHud</family>
                                    <pointsize>15</pointsize>
-                                   <weight>75</weight>
-                                   <bold>true</bold>
+                                   <weight>50</weight>
+                                   <bold>false</bold>
                                   </font>
                                  </property>
                                  <property name="styleSheet">
@@ -2167,8 +2171,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2182,8 +2186,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2206,8 +2210,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2221,8 +2225,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2245,8 +2249,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2260,8 +2264,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2284,8 +2288,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2299,8 +2303,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2323,8 +2327,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2338,8 +2342,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2362,8 +2366,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2377,8 +2381,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2401,8 +2405,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2416,8 +2420,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2440,8 +2444,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2455,8 +2459,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2479,8 +2483,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2494,8 +2498,8 @@ padding:0
                                      <font>
                                       <family>SystemHud</family>
                                       <pointsize>15</pointsize>
-                                      <weight>75</weight>
-                                      <bold>true</bold>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
                                      </font>
                                     </property>
                                     <property name="text">
@@ -2538,7 +2542,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>46</width>
+                           <width>64</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2593,7 +2597,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>46</width>
+                           <width>64</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2736,8 +2740,8 @@ padding:0px;
                         <font>
                          <family>SystemHud</family>
                          <pointsize>18</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -2772,8 +2776,9 @@ padding:0px;
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="text">
@@ -2797,8 +2802,8 @@ padding:0px;
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="text">
@@ -2822,8 +2827,8 @@ padding:0px;
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="text">
@@ -2883,16 +2888,10 @@ padding:0
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_46">
               <item>
-               <widget class="QTextEdit" name="librarySearchBar">
+               <widget class="QLineEdit" name="librarySearchBar">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
                   <height>55</height>
                  </size>
                 </property>
@@ -2900,18 +2899,10 @@ padding:0
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
                  </font>
                 </property>
                 <property name="styleSheet">
                  <string notr="true"/>
-                </property>
-                <property name="lineWidth">
-                 <number>1</number>
-                </property>
-                <property name="lineWrapMode">
-                 <enum>QTextEdit::NoWrap</enum>
                 </property>
                </widget>
               </item>
@@ -2961,8 +2952,8 @@ padding:0
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="text">
@@ -2982,8 +2973,8 @@ padding:0
                  <font>
                   <family>SystemHud</family>
                   <pointsize>15</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
+                  <weight>50</weight>
+                  <bold>false</bold>
                  </font>
                 </property>
                 <property name="text">
@@ -3120,8 +3111,8 @@ padding:0px;
                      <font>
                       <family>SystemHud</family>
                       <pointsize>15</pointsize>
-                      <weight>75</weight>
-                      <bold>true</bold>
+                      <weight>50</weight>
+                      <bold>false</bold>
                      </font>
                     </property>
                    </widget>
@@ -3172,8 +3163,8 @@ padding:0px;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>963</width>
-                    <height>899</height>
+                    <width>64</width>
+                    <height>18</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3261,8 +3252,8 @@ padding:0px;
                      <font>
                       <family>SystemHud</family>
                       <pointsize>15</pointsize>
-                      <weight>75</weight>
-                      <bold>true</bold>
+                      <weight>50</weight>
+                      <bold>false</bold>
                      </font>
                     </property>
                    </widget>
@@ -3334,9 +3325,10 @@ padding:0px;
               <font>
                <family>SystemHud</family>
                <pointsize>20</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>50</weight>
+               <bold>false</bold>
                <underline>true</underline>
+               <kerning>true</kerning>
               </font>
              </property>
              <property name="text">
@@ -3359,8 +3351,8 @@ padding:0px;
               <font>
                <family>SystemHud</family>
                <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -3374,8 +3366,8 @@ padding:0px;
               <font>
                <family>SystemHud</family>
                <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -3389,8 +3381,8 @@ padding:0px;
               <font>
                <family>SystemHud</family>
                <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -3404,8 +3396,8 @@ padding:0px;
               <font>
                <family>SystemHud</family>
                <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -3466,7 +3458,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>698</width>
+                 <width>693</width>
                  <height>1133</height>
                 </rect>
                </property>
@@ -3499,8 +3491,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -3514,8 +3506,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -3529,8 +3521,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -3558,8 +3550,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>20</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                    <underline>true</underline>
                   </font>
                  </property>
@@ -3597,8 +3589,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>684</width>
-                 <height>1184</height>
+                 <width>679</width>
+                 <height>1154</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3652,8 +3644,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -3671,8 +3663,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <item>
@@ -3707,8 +3699,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -3726,8 +3718,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3762,8 +3754,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -3781,8 +3773,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="styleSheet">
@@ -3802,8 +3794,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3820,8 +3812,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3838,8 +3830,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3856,8 +3848,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3888,8 +3880,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -3907,8 +3899,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3925,8 +3917,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3957,8 +3949,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -3976,8 +3968,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -3997,8 +3989,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4018,8 +4010,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4039,8 +4031,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4074,9 +4066,9 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
+                          <weight>50</weight>
                           <italic>false</italic>
-                          <bold>true</bold>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4094,8 +4086,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4121,8 +4113,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4156,9 +4148,9 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
+                          <weight>50</weight>
                           <italic>false</italic>
-                          <bold>true</bold>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4176,8 +4168,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -4220,8 +4212,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4239,8 +4231,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4275,8 +4267,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -4290,8 +4282,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -4305,8 +4297,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -4334,8 +4326,8 @@ padding: 0px;
                   <font>
                    <family>SystemHud</family>
                    <pointsize>20</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                    <underline>true</underline>
                   </font>
                  </property>
@@ -4376,7 +4368,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>698</width>
+                 <width>693</width>
                  <height>1133</height>
                 </rect>
                </property>
@@ -4431,8 +4423,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4450,8 +4442,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4465,8 +4457,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4480,8 +4472,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4495,8 +4487,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4510,8 +4502,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4525,8 +4517,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4540,8 +4532,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4569,8 +4561,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4588,8 +4580,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4603,8 +4595,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4618,8 +4610,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4647,8 +4639,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4666,8 +4658,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4681,8 +4673,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4696,8 +4688,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4711,8 +4703,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4726,8 +4718,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="text">
@@ -4755,8 +4747,8 @@ padding: 0px;
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -4789,7 +4781,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>854</width>
+                           <width>869</width>
                            <height>628</height>
                           </rect>
                          </property>
@@ -5494,8 +5486,8 @@ padding:0
                             <font>
                              <family>SystemHud</family>
                              <pointsize>15</pointsize>
-                             <weight>75</weight>
-                             <bold>true</bold>
+                             <weight>50</weight>
+                             <bold>false</bold>
                             </font>
                            </property>
                            <property name="text">
@@ -5509,8 +5501,8 @@ padding:0
                             <font>
                              <family>SystemHud</family>
                              <pointsize>15</pointsize>
-                             <weight>75</weight>
-                             <bold>true</bold>
+                             <weight>50</weight>
+                             <bold>false</bold>
                             </font>
                            </property>
                            <property name="text">
@@ -5548,8 +5540,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5563,8 +5555,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5578,8 +5570,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5607,8 +5599,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>20</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                    <underline>true</underline>
                   </font>
                  </property>
@@ -5646,7 +5638,7 @@ padding:0
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>698</width>
+                 <width>693</width>
                  <height>1133</height>
                 </rect>
                </property>
@@ -5702,8 +5694,8 @@ padding:0
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -5721,8 +5713,8 @@ padding:0
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <item>
@@ -5753,8 +5745,8 @@ padding:0
                          <font>
                           <family>SystemHud</family>
                           <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                           <underline>true</underline>
                          </font>
                         </property>
@@ -5772,8 +5764,8 @@ padding:0
                          <font>
                           <family>SystemHud</family>
                           <pointsize>15</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <weight>50</weight>
+                          <bold>false</bold>
                          </font>
                         </property>
                         <property name="suffix">
@@ -5827,8 +5819,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5842,8 +5834,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5857,8 +5849,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                   </font>
                  </property>
                  <property name="text">
@@ -5886,8 +5878,8 @@ padding:0
                   <font>
                    <family>SystemHud</family>
                    <pointsize>20</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
+                   <weight>50</weight>
+                   <bold>false</bold>
                    <underline>true</underline>
                   </font>
                  </property>
@@ -5975,8 +5967,8 @@ padding:0
                        <font>
                         <family>SystemHud</family>
                         <pointsize>20</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                         <underline>true</underline>
                        </font>
                       </property>
@@ -6004,8 +5996,8 @@ padding:0
                        <font>
                         <family>SystemHud</family>
                         <pointsize>15</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="styleSheet">
@@ -6020,7 +6012,7 @@ padding:0
                      <widget class="QLabel" name="apiAccessLabel">
                       <property name="font">
                        <font>
-                        <family>SystemHud [unknown]</family>
+                        <family>SystemHud</family>
                         <pointsize>15</pointsize>
                         <weight>50</weight>
                         <bold>false</bold>
@@ -6040,8 +6032,8 @@ padding:0
                        <font>
                         <family>SystemHud</family>
                         <pointsize>15</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
+                        <weight>50</weight>
+                        <bold>false</bold>
                        </font>
                       </property>
                       <property name="text">
