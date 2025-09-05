@@ -2794,7 +2794,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>46</width>
+                           <width>64</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2849,7 +2849,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>46</width>
+                           <width>64</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -3710,8 +3710,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>64</width>
-                 <height>18</height>
+                 <width>677</width>
+                 <height>770</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -4619,8 +4619,8 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>0</y>
-                 <width>514</width>
+                 <y>-281</y>
+                 <width>663</width>
                  <height>1051</height>
                 </rect>
                </property>
@@ -5047,7 +5047,6 @@ padding:0
 *{
     font-family: &quot;SystemHud&quot;;
     font-size: 15pt;
-    font-weight: bold;
 }
 </string>
                          </property>
@@ -5177,8 +5176,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5263,8 +5262,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5474,8 +5473,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5496,8 +5495,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5525,8 +5524,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5631,8 +5630,8 @@ padding:0
                              <font>
                               <family>SystemHud</family>
                               <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
+                              <weight>50</weight>
+                              <bold>false</bold>
                              </font>
                             </property>
                             <property name="text">
@@ -5890,8 +5889,8 @@ padding:0
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>340</width>
-                 <height>228</height>
+                 <width>677</width>
+                 <height>770</height>
                 </rect>
                </property>
                <property name="styleSheet">
