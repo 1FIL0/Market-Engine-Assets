@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1139</width>
-    <height>1321</height>
+    <width>1123</width>
+    <height>958</height>
    </rect>
   </property>
   <property name="font">
@@ -617,66 +617,19 @@ padding:0;
                          </property>
                         </widget>
                        </item>
-                       <item>
-                        <widget class="QWidget" name="buildButtons" native="true">
+                       <item alignment="Qt::AlignLeft">
+                        <widget class="QPushButton" name="buttonCheckForUpdates">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                          </font>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true"/>
                          </property>
-                         <layout class="QVBoxLayout" name="verticalLayout_22"/>
-                        </widget>
-                       </item>
-                       <item>
-                        <spacer name="horizontalSpacer_2">
-                         <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                         </property>
-                         <property name="sizeHint" stdset="0">
-                          <size>
-                           <width>40</width>
-                           <height>20</height>
-                          </size>
-                         </property>
-                        </spacer>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="buttonGoToWebsite">
-                         <property name="minimumSize">
-                          <size>
-                           <width>200</width>
-                           <height>0</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>SystemHud</family>
-                           <pointsize>15</pointsize>
-                           <weight>50</weight>
-                           <bold>false</bold>
-                          </font>
-                         </property>
                          <property name="text">
-                          <string>Go to website</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="buttonGoToRepo">
-                         <property name="minimumSize">
-                          <size>
-                           <width>200</width>
-                           <height>0</height>
-                          </size>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>SystemHud</family>
-                           <pointsize>15</pointsize>
-                           <weight>50</weight>
-                           <bold>false</bold>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Go to repository</string>
+                          <string>Check for updates</string>
                          </property>
                         </widget>
                        </item>
@@ -790,6 +743,61 @@ padding:0;
                   </widget>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="buttonGoToRepo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Go to repository</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonGoToWebsite">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Go to website</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
                   <spacer name="verticalSpacer_5">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
@@ -812,6 +820,461 @@ padding:0;
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Minimum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>5</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="rightInfo" native="true">
+          <property name="styleSheet">
+           <string notr="true">#rightInfo{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px;}
+
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_56">
+           <item alignment="Qt::AlignTop">
+            <widget class="QWidget" name="systemsInfo" native="true">
+             <property name="styleSheet">
+              <string notr="true">#systemsInfo{
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+border: 1px solid white;
+}
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_35">
+                <property name="font">
+                 <font>
+                  <family>SystemHud</family>
+                  <pointsize>20</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Systems</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QWidget" name="sonarStatusHHome" native="true">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_29">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_36">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>65</width>
+                     <height>65</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="../icons/market_engine_icons.qrc">:/icons/sonar_api.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QStackedWidget" name="sonarStatusStackedHome">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="currentIndex">
+                    <number>1</number>
+                   </property>
+                   <widget class="QWidget" name="sonarStatusStackedOnlineHome">
+                    <property name="styleSheet">
+                     <string notr="true">#sonarStatusStackedOnlineHome{
+	background-color: rgb(99, 140, 24);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_37">
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="sonarStatusStackedOnlineLHome">
+                       <property name="font">
+                        <font>
+                         <family>SystemHud</family>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Online</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="sonarStatusStackedOfflineHome">
+                    <property name="styleSheet">
+                     <string notr="true">#sonarStatusStackedOfflineHome{
+	background-color: rgb(125, 27, 29);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_38">
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="sonarStatusStackedOfflineLHome">
+                       <property name="font">
+                        <font>
+                         <family>SystemHud</family>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Offline</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonSonarExecHome">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonSonarEndHome">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QWidget" name="tradeupEngineStatusHHome" native="true">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_39">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_37">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>65</width>
+                     <height>65</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="../icons/market_engine_icons.qrc">:/icons/calculator_auto.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QStackedWidget" name="tradeupEngineStatusStackedHome">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="currentIndex">
+                    <number>1</number>
+                   </property>
+                   <widget class="QWidget" name="tradeupEngineStatusStackedOnlineHome">
+                    <property name="styleSheet">
+                     <string notr="true">#tradeupEngineStatusStackedOnlineHome{
+	background-color: rgb(99, 140, 24);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_40">
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="tradeupEngineStatusStackedOnlineLHome">
+                       <property name="font">
+                        <font>
+                         <family>SystemHud</family>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Online</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="tradeupEngineStatusStackedOfflineHome">
+                    <property name="styleSheet">
+                     <string notr="true">#tradeupEngineStatusStackedOfflineHome{
+	background-color: rgb(125, 27, 29);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_41">
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="tradeupEngineStatusStackedOfflineLHome">
+                       <property name="font">
+                        <font>
+                         <family>SystemHud</family>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Offline</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonTradeupEngineExecHome">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="buttonTradeupEngineEndHome">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../icons/market_engine_icons.qrc">
+                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>32</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="serverStatus" native="true">
+             <property name="styleSheet">
+              <string notr="true">#serverStatus{
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+border: 1px solid white;
+}
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_38">
+                <property name="font">
+                 <font>
+                  <family>SystemHud</family>
+                  <pointsize>20</pointsize>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>General Info</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_11" native="true">
+                <property name="styleSheet">
+                 <string notr="true">padding: 0</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="itemsLoadedHome">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Items loaded: 0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="tradeupsFoundHome">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>tradeups loaded: 0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
          <widget class="QWidget" name="homeRight" native="true">
           <layout class="QVBoxLayout" name="verticalLayout_49">
            <property name="leftMargin">
@@ -826,217 +1289,6 @@ padding:0;
            <property name="bottomMargin">
             <number>0</number>
            </property>
-           <item>
-            <widget class="QWidget" name="marketEngineStatus" native="true">
-             <property name="styleSheet">
-              <string notr="true">#marketEngineStatus{
-	background-color: rgb(0, 0, 0);
-	border: 1px solid white;
-	border-radius: 10px;}
-
-</string>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_56">
-              <item>
-               <widget class="QWidget" name="widget_11" native="true">
-                <property name="font">
-                 <font>
-                  <underline>false</underline>
-                  <kerning>true</kerning>
-                 </font>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_44">
-                 <item>
-                  <widget class="QWidget" name="statusServerBox" native="true">
-                   <property name="styleSheet">
-                    <string notr="true">#statusServerBox{
-	background-color: rgb(0, 0, 0);
-	border-radius: 10px;
-border: 1px solid white
-
-}
-*{
-padding:2px;
-}</string>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_21">
-                    <item>
-                     <widget class="QLabel" name="label_46">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>20</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                        <underline>true</underline>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Server status</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QTextEdit" name="statusGeneral">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>15</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">#statusGeneral{
-padding:10;
-border-color: rgb(99, 140, 24);
-}</string>
-                      </property>
-                      <property name="readOnly">
-                       <bool>true</bool>
-                      </property>
-                      <property name="html">
-                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QWidget" name="statusAPIBox" native="true">
-                   <property name="styleSheet">
-                    <string notr="true">*{
-padding:2px;
-}
-
-#statusAPIBox{
-	background-color: rgb(0, 0, 0);
-	border-radius: 10px;
-border: 1px solid white
-}
-
-
-</string>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_4">
-                    <item>
-                     <widget class="QLabel" name="label_42">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>20</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                        <underline>true</underline>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>API Status</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QTextEdit" name="statusAPI">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>15</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">#statusAPI{
-padding: 10;
-border-color: rgb(99, 140, 24);
-}</string>
-                      </property>
-                      <property name="readOnly">
-                       <bool>true</bool>
-                      </property>
-                      <property name="html">
-                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QWidget" name="statusSpecialReportsBox" native="true">
-                   <property name="styleSheet">
-                    <string notr="true">#statusSpecialReportsBox{
-	background-color: rgb(0, 0, 0);
-	border-radius: 10px;
-border: 1px solid white
-}
-*{
-padding:2px;
-}</string>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_5">
-                    <item>
-                     <widget class="QLabel" name="label_45">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>20</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                        <underline>true</underline>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Special reports</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QTextEdit" name="statusSpecialReports">
-                      <property name="font">
-                       <font>
-                        <family>SystemHud</family>
-                        <pointsize>15</pointsize>
-                        <weight>50</weight>
-                        <bold>false</bold>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">#statusSpecialReports{
-padding: 10;
-border-color: rgb(99, 140, 24);
-}</string>
-                      </property>
-                      <property name="readOnly">
-                       <bool>true</bool>
-                      </property>
-                      <property name="html">
-                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SystemHud'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N/A&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
           </layout>
          </widget>
         </item>
@@ -1966,8 +2218,8 @@ padding: 0
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>963</width>
-                       <height>1185</height>
+                       <width>64</width>
+                       <height>16</height>
                       </rect>
                      </property>
                      <property name="styleSheet">
@@ -2542,7 +2794,7 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
+                           <width>46</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2597,7 +2849,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
+                           <width>46</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -3023,8 +3275,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>963</width>
-                    <height>899</height>
+                    <width>947</width>
+                    <height>536</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3458,8 +3710,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>693</width>
-                 <height>1133</height>
+                 <width>64</width>
+                 <height>18</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3589,7 +3841,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>679</width>
+                 <width>663</width>
                  <height>1154</height>
                 </rect>
                </property>
@@ -3682,7 +3934,7 @@ padding: 0px;
                      </layout>
                     </widget>
                    </item>
-                   <item>
+                   <item alignment="Qt::AlignTop">
                     <widget class="QWidget" name="tradeupEngineSettingsGPUS" native="true">
                      <property name="styleSheet">
                       <string notr="true">#tradeupEngineSettingsGPUS{
@@ -4368,8 +4620,8 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>693</width>
-                 <height>1133</height>
+                 <width>514</width>
+                 <height>1051</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -5638,8 +5890,8 @@ padding:0
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>693</width>
-                 <height>1133</height>
+                 <width>340</width>
+                 <height>228</height>
                 </rect>
                </property>
                <property name="styleSheet">
