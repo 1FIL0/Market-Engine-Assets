@@ -5,20 +5,26 @@ This repository contains assets under different licensing terms.
 Please read carefully before use.
 
 1. Market Engine Brand Assets
-   - Definition: Any icons, logos, or other graphics that represent
+    - Definition: Any icons, logos, or other graphics that represent
     the Market Engine identity (e.g., app icon, wordmarks).
-    - Copyright (C) 2025 OneFil (1FIL0)
-   - Proprietary, all rights reserved.
-   - These brand assets may not be redistributed, modified, or used to
-     represent other projects without explicit permission.
+    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
+    - Proprietary, all rights reserved.
+    - These brand assets may not be redistributed, modified, or used to
+    represent other projects without explicit permission.
 
 2. Third-Party Logos (icons_third_party/)
-   - Logos and trademarks of their respective owners (e.g. Discord, YouTube, GitHub).
-   - Included for informational or integration purposes only.
-   - Not licensed for redistribution or modification.
-   - This project is not affiliated with or endorsed by the respective companies.
+    - Logos and trademarks of their respective owners (e.g. Discord, YouTube, GitHub).
+    - Included for informational or integration purposes only.
+    - Not licensed for redistribution or modification.
+    - This project is not affiliated with or endorsed by the respective companies.
 
-3. Everything else
-   - Copyright (C) 2025 OneFil (1FIL0)
-   - Licensed under the GNU General Public License v3.0 (GPL-3.0).
-   - See LICENSE_GPL3.txt for the full license text.
+3. Fonts
+    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
+    - Licensed under the SIL Open Font License (OFL)
+    - See LICENCE_OFL.txt for details.
+
+3. Other assets
+    - Definition: .ui files and .qrc files
+    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
+    - Licensed under the GNU General Public License v3.0 (GPL-3.0).
+    - See LICENSE_GPL3.txt for the full license text.
