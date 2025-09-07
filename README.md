@@ -6,5 +6,4 @@ This repo contains all of the mandatory assets for Market Engine
 https://marketengine.onefil.dev
 
 ## LICENCE
-These assets are licenced under the GPL-V3.0 licence
-
+Read the LICENCE file

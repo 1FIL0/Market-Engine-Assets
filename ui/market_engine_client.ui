@@ -287,8 +287,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/home.png</normaloff>:/icons/home.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/home.png</normaloff>:/icons/icons_market_engine/home.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -310,8 +310,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/dashboard.png</normaloff>:/icons/dashboard.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/dashboard.png</normaloff>:/icons/icons_market_engine/dashboard.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -327,8 +327,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/sonar_api.png</normaloff>:/icons/sonar_api.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/sonar_api.png</normaloff>:/icons/icons_market_engine/sonar_api.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -344,8 +344,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/calculator_auto.png</normaloff>:/icons/calculator_auto.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/calculator_auto.png</normaloff>:/icons/icons_market_engine/calculator_auto.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -361,8 +361,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/profitable_tradeups.png</normaloff>:/icons/profitable_tradeups.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/profitable_tradeups.png</normaloff>:/icons/icons_market_engine/profitable_tradeups.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -378,8 +378,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/loaded_items.png</normaloff>:/icons/loaded_items.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/loaded_items.png</normaloff>:/icons/icons_market_engine/loaded_items.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -414,8 +414,8 @@ padding:0;
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/settings.png</normaloff>:/icons/settings.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/settings.png</normaloff>:/icons/icons_market_engine/settings.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -507,7 +507,7 @@ border: 1px solid white;
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="../icons/market_engine_icons.qrc">:/icons/market_engine_client.png</pixmap>
+                       <pixmap resource="../qrc/brand_icons.qrc">:/newPrefix/icons_brand/market_engine_client.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -601,6 +601,22 @@ padding:0;
                          </property>
                         </widget>
                        </item>
+                       <item>
+                        <widget class="QLabel" name="label_32">
+                         <property name="font">
+                          <font>
+                           <family>SystemHud</family>
+                           <pointsize>15</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                           <underline>false</underline>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Release Date: 01/09/2025</string>
+                         </property>
+                        </widget>
+                       </item>
                        <item alignment="Qt::AlignLeft">
                         <widget class="QPushButton" name="buttonCheckForUpdates">
                          <property name="font">
@@ -675,8 +691,8 @@ padding:0;
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../icons/market_engine_icons.qrc">
-                           <normaloff>:/icons/youtube.png</normaloff>:/icons/youtube.png</iconset>
+                          <iconset resource="../qrc/third_party_icons.qrc">
+                           <normaloff>:/third-party-icons/icons_third_party/youtube.png</normaloff>:/third-party-icons/icons_third_party/youtube.png</iconset>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -692,8 +708,8 @@ padding:0;
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../icons/market_engine_icons.qrc">
-                           <normaloff>:/icons/discord.png</normaloff>:/icons/discord.png</iconset>
+                          <iconset resource="../qrc/third_party_icons.qrc">
+                           <normaloff>:/third-party-icons/icons_third_party/discord.png</normaloff>:/third-party-icons/icons_third_party/discord.png</iconset>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -709,8 +725,8 @@ padding:0;
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../icons/market_engine_icons.qrc">
-                           <normaloff>:/icons/github.png</normaloff>:/icons/github.png</iconset>
+                          <iconset resource="../qrc/third_party_icons.qrc">
+                           <normaloff>:/third-party-icons/icons_third_party/github.png</normaloff>:/third-party-icons/icons_third_party/github.png</iconset>
                          </property>
                          <property name="iconSize">
                           <size>
@@ -893,7 +909,7 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../icons/market_engine_icons.qrc">:/icons/sonar_api.png</pixmap>
+                    <pixmap resource="../qrc/market_engine_icons.qrc">:/icons/icons_market_engine/sonar_api.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -976,8 +992,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/start.png</normaloff>:/icons/icons_market_engine/start.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -993,8 +1009,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/end.png</normaloff>:/icons/icons_market_engine/end.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1043,7 +1059,7 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../icons/market_engine_icons.qrc">:/icons/calculator_auto.png</pixmap>
+                    <pixmap resource="../qrc/market_engine_icons.qrc">:/icons/icons_market_engine/calculator_auto.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -1128,8 +1144,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/start.png</normaloff>:/icons/icons_market_engine/start.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1145,8 +1161,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/end.png</normaloff>:/icons/icons_market_engine/end.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1417,8 +1433,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/start.png</normaloff>:/icons/icons_market_engine/start.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1434,8 +1450,8 @@ border: 1px solid white;
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/end.png</normaloff>:/icons/icons_market_engine/end.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1659,8 +1675,8 @@ p, li { white-space: pre-wrap; }
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/start.png</normaloff>:/icons/start.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/start.png</normaloff>:/icons/icons_market_engine/start.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -1676,8 +1692,8 @@ p, li { white-space: pre-wrap; }
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../icons/market_engine_icons.qrc">
-                     <normaloff>:/icons/end.png</normaloff>:/icons/end.png</iconset>
+                    <iconset resource="../qrc/market_engine_icons.qrc">
+                     <normaloff>:/icons/icons_market_engine/end.png</normaloff>:/icons/icons_market_engine/end.png</iconset>
                    </property>
                    <property name="iconSize">
                     <size>
@@ -3021,8 +3037,8 @@ padding:0px;
                  <string> View Manager</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/scan_tradeups.png</normaloff>:/icons/scan_tradeups.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/scan_tradeups.png</normaloff>:/icons/icons_market_engine/scan_tradeups.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -3046,8 +3062,8 @@ padding:0px;
                  <string> View Entries</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/tradeup_entries.png</normaloff>:/icons/tradeup_entries.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/tradeup_entries.png</normaloff>:/icons/icons_market_engine/tradeup_entries.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -3071,8 +3087,8 @@ padding:0px;
                  <string> View Tradeup</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/calculator_input.png</normaloff>:/icons/calculator_input.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/profitable_tradeups.png</normaloff>:/icons/icons_market_engine/profitable_tradeups.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -3148,8 +3164,8 @@ padding:0
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/search.png</normaloff>:/icons/search.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/search.png</normaloff>:/icons/icons_market_engine/search.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -3165,8 +3181,8 @@ padding:0
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset resource="../icons/market_engine_icons.qrc">
-                  <normaloff>:/icons/search_config.png</normaloff>:/icons/search_config.png</iconset>
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/search_config.png</normaloff>:/icons/icons_market_engine/search_config.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -3259,8 +3275,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>64</width>
-                    <height>18</height>
+                    <width>947</width>
+                    <height>536</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3324,8 +3340,8 @@ padding:0px;
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="../icons/market_engine_icons.qrc">
-                      <normaloff>:/icons/left.png</normaloff>:/icons/left.png</iconset>
+                     <iconset resource="../qrc/market_engine_icons.qrc">
+                      <normaloff>:/icons/icons_market_engine/left.png</normaloff>:/icons/icons_market_engine/left.png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -3359,8 +3375,8 @@ padding:0px;
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="../icons/market_engine_icons.qrc">
-                      <normaloff>:/icons/right.png</normaloff>:/icons/right.png</iconset>
+                     <iconset resource="../qrc/market_engine_icons.qrc">
+                      <normaloff>:/icons/icons_market_engine/right.png</normaloff>:/icons/icons_market_engine/right.png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -3465,7 +3481,7 @@ padding:0px;
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="../icons/market_engine_icons.qrc">
+                     <iconset>
                       <normaloff>:/icons/left.png</normaloff>:/icons/left.png</iconset>
                     </property>
                     <property name="iconSize">
@@ -3500,7 +3516,7 @@ padding:0px;
                      <string/>
                     </property>
                     <property name="icon">
-                     <iconset resource="../icons/market_engine_icons.qrc">
+                     <iconset>
                       <normaloff>:/icons/right.png</normaloff>:/icons/right.png</iconset>
                     </property>
                     <property name="iconSize">
@@ -3825,7 +3841,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>315</width>
+                 <width>663</width>
                  <height>1154</height>
                 </rect>
                </property>
@@ -6221,7 +6237,7 @@ padding:0
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="../icons/market_engine_icons.qrc">:/icons/dashboard.png</pixmap>
+                       <pixmap resource="../qrc/market_engine_icons.qrc">:/icons/icons_market_engine/dashboard.png</pixmap>
                       </property>
                      </widget>
                     </item>
@@ -6296,10 +6312,9 @@ padding:0
   </widget>
  </widget>
  <resources>
-  <include location="../icons/market_engine_icons.qrc"/>
-  <include location="../icons/market_engine_icons.qrc"/>
-  <include location="../icons/market_engine_icons.qrc"/>
-  <include location="../../../../.designer/icons/market_engine_icons.qrc"/>
+  <include location="../qrc/market_engine_icons.qrc"/>
+  <include location="../qrc/brand_icons.qrc"/>
+  <include location="../qrc/third_party_icons.qrc"/>
  </resources>
  <connections/>
 </ui>

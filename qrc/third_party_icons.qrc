@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="third-party-icons">
+    <file>../icons_third_party/discord.png</file>
+    <file>../icons_third_party/github.png</file>
+    <file>../icons_third_party/youtube.png</file>
+  </qresource>
+</RCC>

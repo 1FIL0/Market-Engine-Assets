@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>../icons_brand/market_engine_api.png</file>
+    <file>../icons_brand/market_engine_client.png</file>
+    <file>../icons_brand/market_engine_share.png</file>
+    <file>../icons_brand/market_engine_shell_network.png</file>
+  </qresource>
+</RCC>

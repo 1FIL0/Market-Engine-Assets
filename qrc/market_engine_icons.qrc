@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>../icons_market_engine/calculator_auto.png</file>
+    <file>../icons_market_engine/calculator_input.png</file>
+    <file>../icons_market_engine/checked.png</file>
+    <file>../icons_market_engine/dashboard.png</file>
+    <file>../icons_market_engine/delete.png</file>
+    <file>../icons_market_engine/docs.png</file>
+    <file>../icons_market_engine/download.png</file>
+    <file>../icons_market_engine/dropdown.png</file>
+    <file>../icons_market_engine/end.png</file>
+    <file>../icons_market_engine/fav_disabled.png</file>
+    <file>../icons_market_engine/fav_enabled.png</file>
+    <file>../icons_market_engine/fav.png</file>
+    <file>../icons_market_engine/help.png</file>
+    <file>../icons_market_engine/home.png</file>
+    <file>../icons_market_engine/left.png</file>
+    <file>../icons_market_engine/loaded_items.png</file>
+    <file>../icons_market_engine/loading.png</file>
+    <file>../icons_market_engine/lose.png</file>
+    <file>../icons_market_engine/profitable_tradeups.png</file>
+    <file>../icons_market_engine/right.png</file>
+    <file>../icons_market_engine/scan_tradeups.png</file>
+    <file>../icons_market_engine/search_config.png</file>
+    <file>../icons_market_engine/search.png</file>
+    <file>../icons_market_engine/server.png</file>
+    <file>../icons_market_engine/settings.png</file>
+    <file>../icons_market_engine/sonar_api.png</file>
+    <file>../icons_market_engine/spin_down.png</file>
+    <file>../icons_market_engine/spin_up.png</file>
+    <file>../icons_market_engine/start.png</file>
+    <file>../icons_market_engine/tick.png</file>
+    <file>../icons_market_engine/tradeup_entries.png</file>
+    <file>../icons_market_engine/unknown.png</file>
+    <file>../icons_market_engine/win.png</file>
+  </qresource>
+</RCC>
