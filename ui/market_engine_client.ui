@@ -507,7 +507,7 @@ border: 1px solid white;
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="../qrc/brand_icons.qrc">:/newPrefix/icons_brand/market_engine_client.png</pixmap>
+                       <pixmap resource="../qrc/brand_icons.qrc">:/newPrefix/icons_market_engine_brand/market_engine_client.png</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -3275,8 +3275,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>947</width>
-                    <height>536</height>
+                    <width>64</width>
+                    <height>18</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3841,7 +3841,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>663</width>
+                 <width>315</width>
                  <height>1154</height>
                 </rect>
                </property>
