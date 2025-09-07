@@ -601,22 +601,6 @@ padding:0;
                          </property>
                         </widget>
                        </item>
-                       <item>
-                        <widget class="QLabel" name="label_32">
-                         <property name="font">
-                          <font>
-                           <family>SystemHud</family>
-                           <pointsize>15</pointsize>
-                           <weight>50</weight>
-                           <bold>false</bold>
-                           <underline>false</underline>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Release Date: 01/09/2025</string>
-                         </property>
-                        </widget>
-                       </item>
                        <item alignment="Qt::AlignLeft">
                         <widget class="QPushButton" name="buttonCheckForUpdates">
                          <property name="font">
@@ -6315,6 +6299,7 @@ padding:0
   <include location="../icons/market_engine_icons.qrc"/>
   <include location="../icons/market_engine_icons.qrc"/>
   <include location="../icons/market_engine_icons.qrc"/>
+  <include location="../../../../.designer/icons/market_engine_icons.qrc"/>
  </resources>
  <connections/>
 </ui>
