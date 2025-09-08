@@ -98,7 +98,7 @@ border: 1px solid white;
 
 QCheckBox::indicator::checked{
 border-color: rgb(99, 140, 24);
-	image: url(:/icons/checked.png);
+	image: url(:/icons/icons_market_engine/checked.png);
 width: 20px;
 height: 20px;
 }
@@ -129,7 +129,7 @@ background-color: rgb(129, 34, 17);
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/spin_up.png);
+image: url(:/icons/market_engine_icons/spin_up.png);
 margin-bottom:5px;
 margin-right:2px
     }
@@ -139,7 +139,7 @@ margin-right:2px
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-	image: url(:/icons/spin_down.png);
+	image: url(:/icons/market_engine_icons/spin_down.png);
 margin-top:5px;
 margin-right:2px;
     }
@@ -164,7 +164,7 @@ background-color: rgb(99, 140, 24);
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/spin_up.png);
+image: url(:/icons/market_engine_icons/spin_up.png);
 margin-bottom:5px;
 margin-right:2px;
     }
@@ -174,7 +174,7 @@ margin-right:2px;
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/spin_down.png);
+image: url(:/icons/market_engine_icons/spin_down.png);
 margin-top:5px;
 margin-right:2px;
     }
@@ -203,7 +203,7 @@ QComboBox::down-arrow{
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/dropdown.png);
+	image: url(:/icons/icons_market_engine/dropdown.png);
 }
 
 QComboBox::drop-down {
@@ -237,7 +237,7 @@ background-color: rgb(99, 140, 24);
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/spin_up.png);
+image: url(:/icons/market_engine_icons/spin_up.png);
 margin-bottom:5px;
 margin-right:2px;
     }
@@ -247,7 +247,7 @@ margin-right:2px;
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/spin_down.png);
+image: url(:/icons/market_engine_icons/spin_down.png);
 margin-top:5px;
 margin-right:2px;
     }
@@ -598,22 +598,6 @@ padding:0;
                          </property>
                          <property name="text">
                           <string>Version: 1.0.0</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLabel" name="label_32">
-                         <property name="font">
-                          <font>
-                           <family>SystemHud</family>
-                           <pointsize>15</pointsize>
-                           <weight>50</weight>
-                           <bold>false</bold>
-                           <underline>false</underline>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Release Date: 01/09/2025</string>
                          </property>
                         </widget>
                        </item>

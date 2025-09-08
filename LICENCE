@@ -4,12 +4,13 @@ Project Licensing Overview
 This repository contains assets under different licensing terms.
 Please read carefully before use.
 
-1. Market Engine Brand Assets
+1. Market Engine Assets
     - Definition: Any icons, logos, or other graphics that represent
-    the Market Engine identity (e.g., app icon, wordmarks).
+    the Market Engine identity (e.g., app icon, wordmarks). Also includes
+    all non-third party icons.
     - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
     - Proprietary, all rights reserved.
-    - These brand assets may not be redistributed, modified, or used to
+    - These assets may not be redistributed, modified, or used to
     represent other projects without explicit permission.
 
 2. Third-Party Logos (icons_third_party/)
