@@ -1,6 +1,6 @@
 Copyright (c) 2025, OneFil (1FIL0) https://github.com/1FIL0,
 
-Fonts in fonts/ are licensed under the SIL Open Font License (OFL) 1.1.
+included fonts are licensed under the SIL Open Font License (OFL) 1.1.
 
 Each font may have its own Reserved Font Name; see below.
 
