@@ -129,7 +129,7 @@ background-color: rgb(129, 34, 17);
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/market_engine_icons/spin_up.png);
+	image: url(:/icons/icons_market_engine/spin_up.png);
 margin-bottom:5px;
 margin-right:2px
     }
@@ -139,7 +139,7 @@ margin-right:2px
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-	image: url(:/icons/market_engine_icons/spin_down.png);
+	image: url(:/icons/icons_market_engine/spin_down.png);
 margin-top:5px;
 margin-right:2px;
     }
@@ -164,7 +164,7 @@ background-color: rgb(99, 140, 24);
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/market_engine_icons/spin_up.png);
+	image: url(:/icons/icons_market_engine/spin_up.png);
 margin-bottom:5px;
 margin-right:2px;
     }
@@ -174,7 +174,7 @@ margin-right:2px;
 width:10px;
 height:10px;
 border-color: rgb(255, 255, 255);
-image: url(:/icons/market_engine_icons/spin_down.png);
+	image: url(:/icons/icons_market_engine/spin_down.png);
 margin-top:5px;
 margin-right:2px;
     }
@@ -407,7 +407,24 @@ padding:0;
            </item>
            <item>
             <widget class="QWidget" name="tabButtonsBottom" native="true">
-             <layout class="QVBoxLayout" name="verticalLayout_65">
+             <layout class="QVBoxLayout" name="verticalLayout_22">
+              <item>
+               <widget class="QPushButton" name="buttonTabHelp">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../qrc/market_engine_icons.qrc">
+                  <normaloff>:/icons/icons_market_engine/help.png</normaloff>:/icons/icons_market_engine/help.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
               <item>
                <widget class="QPushButton" name="buttonTabSettings">
                 <property name="text">
@@ -2202,8 +2219,8 @@ padding: 0
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>64</width>
-                       <height>16</height>
+                       <width>947</width>
+                       <height>822</height>
                       </rect>
                      </property>
                      <property name="styleSheet">
@@ -2883,8 +2900,8 @@ padding:0px;
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -2898,8 +2915,8 @@ padding:0px;
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -2913,8 +2930,8 @@ padding:0px;
                         <font>
                          <family>SystemHud</family>
                          <pointsize>15</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
+                         <weight>50</weight>
+                         <bold>false</bold>
                         </font>
                        </property>
                        <property name="text">
@@ -3259,8 +3276,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>64</width>
-                    <height>18</height>
+                    <width>947</width>
+                    <height>536</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3825,7 +3842,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>315</width>
+                 <width>663</width>
                  <height>1154</height>
                 </rect>
                </property>
@@ -6277,6 +6294,79 @@ padding:0
                      </widget>
                     </item>
                    </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="centralHelp">
+       <layout class="QHBoxLayout" name="horizontalLayout_42">
+        <item>
+         <widget class="QWidget" name="centralHelpCenter" native="true">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_44">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="helpDocs" native="true">
+             <property name="styleSheet">
+              <string notr="true">#helpDocs{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_60">
+              <item alignment="Qt::AlignVCenter">
+               <widget class="QWidget" name="widget_28" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_61">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_32">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>20</pointsize>
+                     <weight>50</weight>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>For documentation visit</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QPushButton" name="marketEngineDocsButton">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Market Engine Docs</string>
+                   </property>
                   </widget>
                  </item>
                 </layout>
