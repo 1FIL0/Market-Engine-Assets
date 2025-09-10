@@ -4,7 +4,13 @@ Project Licensing Overview
 This repository contains assets under different licensing terms.
 Please read carefully before use.
 
-1. Market Engine Assets
+1. Source Code
+    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
+    - All source code in this repository is licensed under the
+      GNU General Public License v3.0 (GPL-3.0).
+    - See LICENCE_CODE.txt for the full license text.
+
+2. Market Engine Assets
     - Definition: Any icons, logos, or other graphics that represent
     the Market Engine identity (e.g., app icon, wordmarks). Also includes
     all non-third party icons.
@@ -13,19 +19,13 @@ Please read carefully before use.
     - These assets may not be redistributed, modified, or used to
     represent other projects without explicit permission.
 
-2. Third-Party Logos (icons_third_party/)
+3. Third-Party Logos
     - Logos and trademarks of their respective owners (e.g. Discord, YouTube, GitHub).
     - Included for informational or integration purposes only.
     - Not licensed for redistribution or modification.
     - This project is not affiliated with or endorsed by the respective companies.
 
-3. Fonts
+4. Font - SystemHud
     - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
     - Licensed under the SIL Open Font License (OFL)
-    - See LICENCE_OFL_1.1.txt for details.
-
-4. Other assets
-    - Definition: .ui files and .qrc files
-    - Copyright (C) 2025 OneFil (1FIL0) https://github.com/1FIL0
-    - Licensed under the GNU General Public License v3.0 (GPL-3.0).
-    - See LICENSE_GPL3.txt for the full license text.
+    - See LICENCE_SystemHud.txt for details.
