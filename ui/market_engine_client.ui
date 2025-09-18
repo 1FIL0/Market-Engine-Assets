@@ -460,7 +460,7 @@ padding:0;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="centralHome">
        <layout class="QHBoxLayout" name="horizontalLayout_35">
@@ -2219,8 +2219,8 @@ padding: 0
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>947</width>
-                       <height>822</height>
+                       <width>64</width>
+                       <height>16</height>
                       </rect>
                      </property>
                      <property name="styleSheet">
@@ -4251,6 +4251,9 @@ padding: 0px;
                         </property>
                         <property name="prefix">
                          <string/>
+                        </property>
+                        <property name="minimum">
+                         <number>10</number>
                         </property>
                         <property name="maximum">
                          <number>400</number>
