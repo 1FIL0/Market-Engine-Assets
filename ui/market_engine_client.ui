@@ -2877,7 +2877,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>46</width>
+                           <width>64</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -3709,7 +3709,7 @@ padding: 0px;
 }</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="settingsStackedSonar">
            <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -3870,7 +3870,7 @@ padding: 0px;
                  <x>0</x>
                  <y>0</y>
                  <width>663</width>
-                 <height>1268</height>
+                 <height>1182</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -4011,65 +4011,6 @@ padding: 0px;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QWidget" name="tradeupEngineTradeupMode" native="true">
-                     <property name="styleSheet">
-                      <string notr="true">#tradeupEngineTradeupMode{
-	background-color: rgb(0, 0, 0);
-	border: 1px solid white;
-	border-radius: 10px
-}
-
-</string>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_83">
-                      <item>
-                       <widget class="QLabel" name="label_39">
-                        <property name="font">
-                         <font>
-                          <family>SystemHud</family>
-                          <pointsize>20</pointsize>
-                          <weight>50</weight>
-                          <bold>false</bold>
-                          <underline>true</underline>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">padding-left: 0</string>
-                        </property>
-                        <property name="text">
-                         <string>Tradeup mode</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item alignment="Qt::AlignLeft">
-                       <widget class="QComboBox" name="comboBox">
-                        <property name="font">
-                         <font>
-                          <family>SystemHud</family>
-                          <pointsize>15</pointsize>
-                          <weight>50</weight>
-                          <bold>false</bold>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true"/>
-                        </property>
-                        <item>
-                         <property name="text">
-                          <string>Regular Tradeups</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Knife Tradeups</string>
-                         </property>
-                        </item>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
                     <widget class="QWidget" name="tradeupEngineSettingsRarities" native="true">
                      <property name="font">
                       <font>
@@ -4196,6 +4137,19 @@ padding: 0px;
                         </property>
                         <property name="checked">
                          <bool>false</bool>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="tradeupEngineSettingsCovert">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Covert</string>
                         </property>
                        </widget>
                       </item>
@@ -4709,7 +4663,7 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-41</y>
+                 <y>-281</y>
                  <width>663</width>
                  <height>1051</height>
                 </rect>
@@ -5122,9 +5076,9 @@ padding:0
                          <property name="geometry">
                           <rect>
                            <x>0</x>
-                           <y>0</y>
+                           <y>-372</y>
                            <width>869</width>
-                           <height>628</height>
+                           <height>656</height>
                           </rect>
                          </property>
                          <property name="styleSheet">
@@ -5141,34 +5095,6 @@ padding:0
 </string>
                          </property>
                          <layout class="QGridLayout" name="gridLayout_2">
-                          <item row="16" column="4">
-                           <widget class="QCheckBox" name="colNuke">
-                            <property name="text">
-                             <string>nuke</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="20" column="4">
-                           <widget class="QCheckBox" name="colShatteredWeb">
-                            <property name="text">
-                             <string>shattered web</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="17" column="3">
-                           <widget class="QCheckBox" name="colOverpass">
-                            <property name="text">
-                             <string>overpass</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="7" column="4">
-                           <widget class="QCheckBox" name="colChroma2">
-                            <property name="text">
-                             <string>chroma 2</string>
-                            </property>
-                           </widget>
-                          </item>
                           <item row="7" column="1">
                            <widget class="QCheckBox" name="colChopShop">
                             <property name="text">
@@ -5176,24 +5102,31 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="12" column="0">
-                           <widget class="QCheckBox" name="colGamma">
+                          <item row="21" column="3">
+                           <widget class="QCheckBox" name="colSpectrum2">
                             <property name="text">
-                             <string>gamma</string>
+                             <string>spectrum 2</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="23" column="0">
-                           <widget class="QCheckBox" name="colVanguard">
+                          <item row="16" column="3">
+                           <widget class="QCheckBox" name="colNorse">
                             <property name="text">
-                             <string>vanguard</string>
+                             <string>norse</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="17" column="4">
-                           <widget class="QCheckBox" name="colOverpass2024">
+                          <item row="6" column="3">
+                           <widget class="QCheckBox" name="colBrokenFang">
                             <property name="text">
-                             <string>overpass 2024</string>
+                             <string>broken fang</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="20" column="0">
+                           <widget class="QCheckBox" name="colRisingSun">
+                            <property name="text">
+                             <string>rising sun</string>
                             </property>
                            </widget>
                           </item>
@@ -5204,81 +5137,45 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="22" column="0">
-                           <widget class="QCheckBox" name="colStMarc">
+                          <item row="12" column="3">
+                           <widget class="QCheckBox" name="colGlove">
                             <property name="text">
-                             <string>st marc</string>
+                             <string>glove</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="11" column="1">
-                           <widget class="QCheckBox" name="colFever">
+                          <item row="24" column="0">
+                           <widget class="QCheckBox" name="colWinterOffensive">
                             <property name="text">
-                             <string>fever</string>
+                             <string>winter offensive</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="13" column="0">
-                           <widget class="QCheckBox" name="colGraphicDesign">
+                          <item row="22" column="4">
+                           <widget class="QCheckBox" name="colTrain2025">
                             <property name="text">
-                             <string>graphic design</string>
+                             <string>train 2025</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="23" column="3">
-                           <widget class="QCheckBox" name="colVertigo2021">
+                          <item row="6" column="0">
+                           <widget class="QCheckBox" name="colBreakout">
                             <property name="text">
-                             <string>vertigo 2021</string>
+                             <string>breakout</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="14" column="4">
-                           <widget class="QCheckBox" name="colItaly">
+                          <item row="18" column="3">
+                           <widget class="QCheckBox" name="colPrisma2">
                             <property name="text">
-                             <string>italy</string>
+                             <string>prisma 2</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="10" column="4">
-                           <widget class="QCheckBox" name="colEsports2014summer">
+                          <item row="5" column="0">
+                           <widget class="QCheckBox" name="colBank">
                             <property name="text">
-                             <string>esports 2014 summer</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="6" column="4">
-                           <widget class="QCheckBox" name="colCache">
-                            <property name="text">
-                             <string>cache</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="11" column="3">
-                           <widget class="QCheckBox" name="colFracture">
-                            <property name="text">
-                             <string>fracture</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="0">
-                           <widget class="QCheckBox" name="colAlpha">
-                            <property name="font">
-                             <font>
-                              <family>SystemHud</family>
-                              <pointsize>15</pointsize>
-                              <weight>50</weight>
-                              <bold>false</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>Alpha</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="15" column="1">
-                           <widget class="QCheckBox" name="colLake">
-                            <property name="text">
-                             <string>lake</string>
+                             <string>bank</string>
                             </property>
                            </widget>
                           </item>
@@ -5289,17 +5186,17 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="18" column="1">
-                           <widget class="QCheckBox" name="colPrisma">
+                          <item row="12" column="1">
+                           <widget class="QCheckBox" name="colGamma2">
                             <property name="text">
-                             <string>prisma</string>
+                             <string>gamma 2</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="23" column="4">
-                           <widget class="QCheckBox" name="colWildfire">
+                          <item row="10" column="0">
+                           <widget class="QCheckBox" name="colDust22021">
                             <property name="text">
-                             <string>wildfire</string>
+                             <string>dust 2 2021</string>
                             </property>
                            </widget>
                           </item>
@@ -5310,39 +5207,10 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="0" column="4">
-                           <widget class="QCheckBox" name="colArmsDeal">
-                            <property name="font">
-                             <font>
-                              <family>SystemHud</family>
-                              <pointsize>15</pointsize>
-                              <weight>75</weight>
-                              <bold>true</bold>
-                             </font>
-                            </property>
+                          <item row="18" column="0">
+                           <widget class="QCheckBox" name="colPhoenix">
                             <property name="text">
-                             <string>arms deal</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="12" column="4">
-                           <widget class="QCheckBox" name="colGodsAndMonsters">
-                            <property name="text">
-                             <string>gods + monsters</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="10" column="1">
-                           <widget class="QCheckBox" name="colEsports2013">
-                            <property name="text">
-                             <string>esports 2013</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="9" column="4">
-                           <widget class="QCheckBox" name="colDust2">
-                            <property name="text">
-                             <string>dust 2</string>
+                             <string>phoenix</string>
                             </property>
                            </widget>
                           </item>
@@ -5361,129 +5229,45 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="7" column="0">
-                           <widget class="QCheckBox" name="colCanals">
-                            <property name="text">
-                             <string>canals</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="22" column="1">
-                           <widget class="QCheckBox" name="colTrain">
-                            <property name="text">
-                             <string>train</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="21" column="3">
-                           <widget class="QCheckBox" name="colSpectrum2">
-                            <property name="text">
-                             <string>spectrum 2</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="14" column="1">
-                           <widget class="QCheckBox" name="colInferno">
-                            <property name="text">
-                             <string>inferno</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="5" column="0">
-                           <widget class="QCheckBox" name="colBank">
-                            <property name="text">
-                             <string>bank</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="18" column="3">
-                           <widget class="QCheckBox" name="colPrisma2">
-                            <property name="text">
-                             <string>prisma 2</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="22" column="4">
-                           <widget class="QCheckBox" name="colTrain2025">
-                            <property name="text">
-                             <string>train 2025</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="12" column="3">
-                           <widget class="QCheckBox" name="colGlove">
-                            <property name="text">
-                             <string>glove</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="10" column="3">
-                           <widget class="QCheckBox" name="colEsports2013winter">
-                            <property name="text">
-                             <string>esports 2013 winter</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="8" column="1">
-                           <widget class="QCheckBox" name="colClutch">
-                            <property name="text">
-                             <string>clutch</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="11" column="0">
-                           <widget class="QCheckBox" name="colFalchion">
-                            <property name="text">
-                             <string>falchion</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="9" column="1">
-                           <widget class="QCheckBox" name="colDreamsAndNightmares">
-                            <property name="text">
-                             <string>dreams + nightmares</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="6" column="3">
-                           <widget class="QCheckBox" name="colBrokenFang">
-                            <property name="text">
-                             <string>broken fang</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="15" column="0">
-                           <widget class="QCheckBox" name="colKilowatt">
-                            <property name="text">
-                             <string>kilowatt</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="18" column="0">
-                           <widget class="QCheckBox" name="colPhoenix">
-                            <property name="text">
-                             <string>phoenix</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="12" column="1">
-                           <widget class="QCheckBox" name="colGamma2">
-                            <property name="text">
-                             <string>gamma 2</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="19" column="3">
-                           <widget class="QCheckBox" name="colRevolution">
-                            <property name="text">
-                             <string>revolution</string>
-                            </property>
-                           </widget>
-                          </item>
                           <item row="20" column="3">
                            <widget class="QCheckBox" name="colShadow">
                             <property name="text">
                              <string>shadow</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="18" column="1">
+                           <widget class="QCheckBox" name="colPrisma">
+                            <property name="text">
+                             <string>prisma</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="11" column="1">
+                           <widget class="QCheckBox" name="colFever">
+                            <property name="text">
+                             <string>fever</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="16" column="4">
+                           <widget class="QCheckBox" name="colNuke">
+                            <property name="text">
+                             <string>nuke</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="24" column="3">
+                           <widget class="QCheckBox" name="colCS20">
+                            <property name="text">
+                             <string>cs 20</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="10" column="4">
+                           <widget class="QCheckBox" name="colEsports2014summer">
+                            <property name="text">
+                             <string>esports 2014 summer</string>
                             </property>
                            </widget>
                           </item>
@@ -5494,132 +5278,10 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="6" column="0">
-                           <widget class="QCheckBox" name="colBreakout">
+                          <item row="19" column="3">
+                           <widget class="QCheckBox" name="colRevolution">
                             <property name="text">
-                             <string>breakout</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="13" column="3">
-                           <widget class="QCheckBox" name="colHorizon">
-                            <property name="text">
-                             <string>horizon</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="11" column="4">
-                           <widget class="QCheckBox" name="colGallery">
-                            <property name="text">
-                             <string>gallery</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="16" column="3">
-                           <widget class="QCheckBox" name="colNorse">
-                            <property name="text">
-                             <string>norse</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="8" column="4">
-                           <widget class="QCheckBox" name="colControl">
-                            <property name="text">
-                             <string>control</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="10" column="0">
-                           <widget class="QCheckBox" name="colDust22021">
-                            <property name="text">
-                             <string>dust 2 2021</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="20" column="1">
-                           <widget class="QCheckBox" name="colSafehouse">
-                            <property name="text">
-                             <string>safehouse</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="9" column="0">
-                           <widget class="QCheckBox" name="colDangerZone">
-                            <property name="text">
-                             <string>danger zone</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="17" column="0">
-                           <widget class="QCheckBox" name="colNuke2018">
-                            <property name="text">
-                             <string>nuke 2018</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="1">
-                           <widget class="QCheckBox" name="colAncient">
-                            <property name="font">
-                             <font>
-                              <family>SystemHud</family>
-                              <pointsize>15</pointsize>
-                              <weight>50</weight>
-                              <bold>false</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>ancient</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="18" column="4">
-                           <widget class="QCheckBox" name="colRadiant">
-                            <property name="text">
-                             <string>radiant</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="3">
-                           <widget class="QCheckBox" name="colAnubis">
-                            <property name="font">
-                             <font>
-                              <family>SystemHud</family>
-                              <pointsize>15</pointsize>
-                              <weight>50</weight>
-                              <bold>false</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>anubis</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="5" column="1">
-                           <widget class="QCheckBox" name="colBaggage">
-                            <property name="text">
-                             <string>baggage</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="20" column="0">
-                           <widget class="QCheckBox" name="colRisingSun">
-                            <property name="text">
-                             <string>rising sun</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="4" column="0">
-                           <widget class="QCheckBox" name="colArmsDeal2">
-                            <property name="font">
-                             <font>
-                              <family>SystemHud</family>
-                              <pointsize>15</pointsize>
-                              <weight>50</weight>
-                              <bold>false</bold>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>arms deal 2</string>
+                             <string>revolution</string>
                             </property>
                            </widget>
                           </item>
@@ -5630,73 +5292,10 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="6" column="1">
-                           <widget class="QCheckBox" name="colBravo">
+                          <item row="15" column="0">
+                           <widget class="QCheckBox" name="colKilowatt">
                             <property name="text">
-                             <string>bravo</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="5" column="4">
-                           <widget class="QCheckBox" name="colBlacksite">
-                            <property name="text">
-                             <string>blacksite</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="17" column="1">
-                           <widget class="QCheckBox" name="colOffice">
-                            <property name="text">
-                             <string>office</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="7" column="3">
-                           <widget class="QCheckBox" name="colChroma">
-                            <property name="text">
-                             <string>chroma</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="16" column="1">
-                           <widget class="QCheckBox" name="colMirage2021">
-                            <property name="text">
-                             <string>mirage 2021</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="19" column="4">
-                           <widget class="QCheckBox" name="colRiptide">
-                            <property name="text">
-                             <string>riptide</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="8" column="3">
-                           <widget class="QCheckBox" name="colCobblestone">
-                            <property name="text">
-                             <string>cobblestone</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="21" column="4">
-                           <widget class="QCheckBox" name="colSportAndField">
-                            <property name="text">
-                             <string>sport + field</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="9" column="3">
-                           <widget class="QCheckBox" name="colDust">
-                            <property name="text">
-                             <string>dust</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item row="22" column="3">
-                           <widget class="QCheckBox" name="colTrain2021">
-                            <property name="text">
-                             <string>train 2021</string>
+                             <string>kilowatt</string>
                             </property>
                            </widget>
                           </item>
@@ -5707,10 +5306,66 @@ padding:0
                             </property>
                            </widget>
                           </item>
+                          <item row="7" column="0">
+                           <widget class="QCheckBox" name="colCanals">
+                            <property name="text">
+                             <string>canals</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="19" column="4">
+                           <widget class="QCheckBox" name="colRiptide">
+                            <property name="text">
+                             <string>riptide</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="15" column="3">
+                           <widget class="QCheckBox" name="colLimitedEditionItem">
+                            <property name="text">
+                             <string>limited edition item</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="4">
+                           <widget class="QCheckBox" name="colDust2">
+                            <property name="text">
+                             <string>dust 2</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="10" column="1">
+                           <widget class="QCheckBox" name="colEsports2013">
+                            <property name="text">
+                             <string>esports 2013</string>
+                            </property>
+                           </widget>
+                          </item>
                           <item row="13" column="1">
                            <widget class="QCheckBox" name="colHavoc">
                             <property name="text">
                              <string>havoc</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="22" column="0">
+                           <widget class="QCheckBox" name="colStMarc">
+                            <property name="text">
+                             <string>st marc</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="7" column="4">
+                           <widget class="QCheckBox" name="colChroma2">
+                            <property name="text">
+                             <string>chroma 2</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="23" column="0">
+                           <widget class="QCheckBox" name="colVanguard">
+                            <property name="text">
+                             <string>vanguard</string>
                             </property>
                            </widget>
                           </item>
@@ -5736,31 +5391,60 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="19" column="0">
-                           <widget class="QCheckBox" name="colRecoil">
+                          <item row="17" column="4">
+                           <widget class="QCheckBox" name="colOverpass2024">
                             <property name="text">
-                             <string>recoil</string>
+                             <string>overpass 2024</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="21" column="0">
-                           <widget class="QCheckBox" name="colSnakebite">
+                          <item row="16" column="1">
+                           <widget class="QCheckBox" name="colMirage2021">
                             <property name="text">
-                             <string>snakebite</string>
+                             <string>mirage 2021</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="23" column="1">
-                           <widget class="QCheckBox" name="colVertigo">
+                          <item row="17" column="1">
+                           <widget class="QCheckBox" name="colOffice">
                             <property name="text">
-                             <string>vertigo</string>
+                             <string>office</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="14" column="3">
-                           <widget class="QCheckBox" name="colInferno2018">
+                          <item row="12" column="4">
+                           <widget class="QCheckBox" name="colGodsAndMonsters">
                             <property name="text">
-                             <string>inferno 2018</string>
+                             <string>gods + monsters</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QCheckBox" name="colAnubis">
+                            <property name="font">
+                             <font>
+                              <family>SystemHud</family>
+                              <pointsize>15</pointsize>
+                              <weight>50</weight>
+                              <bold>false</bold>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>anubis</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="4">
+                           <widget class="QCheckBox" name="colBlacksite">
+                            <property name="text">
+                             <string>blacksite</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="8" column="4">
+                           <widget class="QCheckBox" name="colControl">
+                            <property name="text">
+                             <string>control</string>
                             </property>
                            </widget>
                           </item>
@@ -5779,24 +5463,103 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="21" column="1">
-                           <widget class="QCheckBox" name="colSpectrum">
+                          <item row="10" column="3">
+                           <widget class="QCheckBox" name="colEsports2013winter">
                             <property name="text">
-                             <string>spectrum</string>
+                             <string>esports 2013 winter</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="15" column="3">
-                           <widget class="QCheckBox" name="colLimitedEditionItem">
+                          <item row="13" column="3">
+                           <widget class="QCheckBox" name="colHorizon">
                             <property name="text">
-                             <string>limited edition item</string>
+                             <string>horizon</string>
                             </property>
                            </widget>
                           </item>
-                          <item row="24" column="0">
-                           <widget class="QCheckBox" name="colWinterOffensive">
+                          <item row="11" column="4">
+                           <widget class="QCheckBox" name="colGallery">
                             <property name="text">
-                             <string>winter offensive</string>
+                             <string>gallery</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="11" column="0">
+                           <widget class="QCheckBox" name="colFalchion">
+                            <property name="text">
+                             <string>falchion</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="14" column="1">
+                           <widget class="QCheckBox" name="colInferno">
+                            <property name="text">
+                             <string>inferno</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="15" column="1">
+                           <widget class="QCheckBox" name="colLake">
+                            <property name="text">
+                             <string>lake</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QCheckBox" name="colAlpha">
+                            <property name="font">
+                             <font>
+                              <family>SystemHud</family>
+                              <pointsize>15</pointsize>
+                              <weight>50</weight>
+                              <bold>false</bold>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>Alpha</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="18" column="4">
+                           <widget class="QCheckBox" name="colRadiant">
+                            <property name="text">
+                             <string>radiant</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QCheckBox" name="colAncient">
+                            <property name="font">
+                             <font>
+                              <family>SystemHud</family>
+                              <pointsize>15</pointsize>
+                              <weight>50</weight>
+                              <bold>false</bold>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>ancient</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="23" column="3">
+                           <widget class="QCheckBox" name="colVertigo2021">
+                            <property name="text">
+                             <string>vertigo 2021</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="12" column="0">
+                           <widget class="QCheckBox" name="colGamma">
+                            <property name="text">
+                             <string>gamma</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="0">
+                           <widget class="QCheckBox" name="colDangerZone">
+                            <property name="text">
+                             <string>danger zone</string>
                             </property>
                            </widget>
                           </item>
@@ -5807,10 +5570,208 @@ padding:0
                             </property>
                            </widget>
                           </item>
-                          <item row="24" column="3">
-                           <widget class="QCheckBox" name="colCS20">
+                          <item row="0" column="4">
+                           <widget class="QCheckBox" name="colArmsDeal">
+                            <property name="font">
+                             <font>
+                              <family>SystemHud</family>
+                              <pointsize>15</pointsize>
+                              <weight>75</weight>
+                              <bold>true</bold>
+                             </font>
+                            </property>
                             <property name="text">
-                             <string>cs 20</string>
+                             <string>arms deal</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QCheckBox" name="colArmsDeal2">
+                            <property name="font">
+                             <font>
+                              <family>SystemHud</family>
+                              <pointsize>15</pointsize>
+                              <weight>50</weight>
+                              <bold>false</bold>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>arms deal 2</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="11" column="3">
+                           <widget class="QCheckBox" name="colFracture">
+                            <property name="text">
+                             <string>fracture</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="6" column="4">
+                           <widget class="QCheckBox" name="colCache">
+                            <property name="text">
+                             <string>cache</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="14" column="4">
+                           <widget class="QCheckBox" name="colItaly">
+                            <property name="text">
+                             <string>italy</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="21" column="1">
+                           <widget class="QCheckBox" name="colSpectrum">
+                            <property name="text">
+                             <string>spectrum</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="14" column="3">
+                           <widget class="QCheckBox" name="colInferno2018">
+                            <property name="text">
+                             <string>inferno 2018</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="1">
+                           <widget class="QCheckBox" name="colDreamsAndNightmares">
+                            <property name="text">
+                             <string>dreams + nightmares</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="23" column="1">
+                           <widget class="QCheckBox" name="colVertigo">
+                            <property name="text">
+                             <string>vertigo</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="1">
+                           <widget class="QCheckBox" name="colBaggage">
+                            <property name="text">
+                             <string>baggage</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="22" column="3">
+                           <widget class="QCheckBox" name="colTrain2021">
+                            <property name="text">
+                             <string>train 2021</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="22" column="1">
+                           <widget class="QCheckBox" name="colTrain">
+                            <property name="text">
+                             <string>train</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="8" column="1">
+                           <widget class="QCheckBox" name="colClutch">
+                            <property name="text">
+                             <string>clutch</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="17" column="0">
+                           <widget class="QCheckBox" name="colNuke2018">
+                            <property name="text">
+                             <string>nuke 2018</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="3">
+                           <widget class="QCheckBox" name="colDust">
+                            <property name="text">
+                             <string>dust</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="21" column="4">
+                           <widget class="QCheckBox" name="colSportAndField">
+                            <property name="text">
+                             <string>sport + field</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="20" column="4">
+                           <widget class="QCheckBox" name="colShatteredWeb">
+                            <property name="text">
+                             <string>shattered web</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="20" column="1">
+                           <widget class="QCheckBox" name="colSafehouse">
+                            <property name="text">
+                             <string>safehouse</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="8" column="3">
+                           <widget class="QCheckBox" name="colCobblestone">
+                            <property name="text">
+                             <string>cobblestone</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="6" column="1">
+                           <widget class="QCheckBox" name="colBravo">
+                            <property name="text">
+                             <string>bravo</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="19" column="0">
+                           <widget class="QCheckBox" name="colRecoil">
+                            <property name="text">
+                             <string>recoil</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="13" column="0">
+                           <widget class="QCheckBox" name="colGraphicDesign">
+                            <property name="text">
+                             <string>graphic design</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="17" column="3">
+                           <widget class="QCheckBox" name="colOverpass">
+                            <property name="text">
+                             <string>overpass</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="23" column="4">
+                           <widget class="QCheckBox" name="colWildfire">
+                            <property name="text">
+                             <string>wildfire</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="21" column="0">
+                           <widget class="QCheckBox" name="colSnakebite">
+                            <property name="text">
+                             <string>snakebite</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="7" column="3">
+                           <widget class="QCheckBox" name="colChroma">
+                            <property name="text">
+                             <string>chroma</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="25" column="0">
+                           <widget class="QCheckBox" name="colGenesis">
+                            <property name="text">
+                             <string>Genesis</string>
                             </property>
                            </widget>
                           </item>
