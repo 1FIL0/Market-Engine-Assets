@@ -460,7 +460,7 @@ padding:0;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="centralHome">
        <layout class="QHBoxLayout" name="horizontalLayout_35">
@@ -1801,7 +1801,7 @@ padding:0px;
 }</string>
              </property>
              <property name="currentIndex">
-              <number>0</number>
+              <number>2</number>
              </property>
              <widget class="QWidget" name="stackedProfitableTradeupsManager">
               <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -2318,7 +2318,7 @@ padding:0
 </string>
                     </property>
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="tradeupStackedOverview">
                      <property name="styleSheet">
@@ -2381,19 +2381,7 @@ padding:0
                               <property name="styleSheet">
                                <string notr="true"/>
                               </property>
-                              <layout class="QVBoxLayout" name="verticalLayout_98">
-                               <property name="leftMargin">
-                                <number>0</number>
-                               </property>
-                               <property name="topMargin">
-                                <number>0</number>
-                               </property>
-                               <property name="rightMargin">
-                                <number>0</number>
-                               </property>
-                               <property name="bottomMargin">
-                                <number>0</number>
-                               </property>
+                              <layout class="QVBoxLayout" name="verticalLayout_65">
                                <item>
                                 <widget class="QCheckBox" name="favouriteTradeupCheckbox">
                                  <property name="font">
@@ -2763,6 +2751,45 @@ padding:0
                                  </layout>
                                 </widget>
                                </item>
+                               <item>
+                                <widget class="QWidget" name="widget_29" native="true">
+                                 <property name="styleSheet">
+                                  <string notr="true">padding: 0</string>
+                                 </property>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_45">
+                                  <item>
+                                   <widget class="QLabel" name="label_30">
+                                    <property name="font">
+                                     <font>
+                                      <family>SystemHud</family>
+                                      <pointsize>15</pointsize>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>Normalized average float</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="tradeupNormalizedAvgFloat">
+                                    <property name="font">
+                                     <font>
+                                      <family>SystemHud</family>
+                                      <pointsize>15</pointsize>
+                                      <weight>50</weight>
+                                      <bold>false</bold>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>0</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
                               </layout>
                              </widget>
                             </item>
@@ -2795,8 +2822,8 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
-                           <height>36</height>
+                           <width>929</width>
+                           <height>741</height>
                           </rect>
                          </property>
                          <property name="styleSheet">
@@ -2807,7 +2834,7 @@ padding:0
 </string>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_16">
-                          <item alignment="Qt::AlignTop">
+                          <item alignment="Qt::AlignLeft|Qt::AlignTop">
                            <widget class="QWidget" name="tradeupInputsScrollContents" native="true">
                             <property name="styleSheet">
                              <string notr="true">#tradeupInputsScrollContents{
@@ -2823,7 +2850,7 @@ QWidget{
 padding:0px;
 }</string>
                             </property>
-                            <layout class="QVBoxLayout" name="verticalLayout_84"/>
+                            <layout class="QGridLayout" name="gridLayout_6"/>
                            </widget>
                           </item>
                          </layout>
@@ -2850,7 +2877,7 @@ padding:0px;
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>64</width>
+                           <width>46</width>
                            <height>36</height>
                           </rect>
                          </property>
@@ -2862,7 +2889,7 @@ padding:0px;
 </string>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_76">
-                          <item alignment="Qt::AlignTop">
+                          <item alignment="Qt::AlignLeft|Qt::AlignTop">
                            <widget class="QWidget" name="tradeupOutputsScrollContents" native="true">
                             <property name="styleSheet">
                              <string notr="true">#tradeupOutputsScrollContents{
@@ -2877,7 +2904,7 @@ QWidget{
 padding:0px;
 }</string>
                             </property>
-                            <layout class="QVBoxLayout" name="verticalLayout_83"/>
+                            <layout class="QGridLayout" name="gridLayout_7"/>
                            </widget>
                           </item>
                          </layout>
@@ -3843,7 +3870,7 @@ padding: 0px;
                  <x>0</x>
                  <y>0</y>
                  <width>663</width>
-                 <height>1154</height>
+                 <height>1268</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -3978,6 +4005,65 @@ padding: 0px;
                         <property name="text">
                          <string>- No GPUS Detected -</string>
                         </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="tradeupEngineTradeupMode" native="true">
+                     <property name="styleSheet">
+                      <string notr="true">#tradeupEngineTradeupMode{
+	background-color: rgb(0, 0, 0);
+	border: 1px solid white;
+	border-radius: 10px
+}
+
+</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_83">
+                      <item>
+                       <widget class="QLabel" name="label_39">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>20</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                          <underline>true</underline>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">padding-left: 0</string>
+                        </property>
+                        <property name="text">
+                         <string>Tradeup mode</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QComboBox" name="comboBox">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>15</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Regular Tradeups</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Knife Tradeups</string>
+                         </property>
+                        </item>
                        </widget>
                       </item>
                      </layout>
@@ -4623,8 +4709,8 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>0</y>
-                 <width>514</width>
+                 <y>-41</y>
+                 <width>663</width>
                  <height>1051</height>
                 </rect>
                </property>
