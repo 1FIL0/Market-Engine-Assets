@@ -744,6 +744,19 @@ padding:0;
                   </widget>
                  </item>
                  <item>
+                  <widget class="QPushButton" name="buttonTutorial">
+                   <property name="font">
+                    <font>
+                     <family>SystemHud</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Youtube Tutorial</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="buttonGoToRepo">
                    <property name="minimumSize">
                     <size>
@@ -3869,7 +3882,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>663</width>
+                 <width>315</width>
                  <height>1182</height>
                 </rect>
                </property>
@@ -4663,9 +4676,9 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-281</y>
+                 <y>-337</y>
                  <width>663</width>
-                 <height>1051</height>
+                 <height>1107</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -4819,6 +4832,19 @@ padding: 0px;
                         </property>
                         <property name="text">
                          <string>covert</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="itemLibraryGradeStar">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Star</string>
                         </property>
                        </widget>
                       </item>
@@ -5076,7 +5102,7 @@ padding:0
                          <property name="geometry">
                           <rect>
                            <x>0</x>
-                           <y>-372</y>
+                           <y>-365</y>
                            <width>869</width>
                            <height>656</height>
                           </rect>
@@ -5813,6 +5839,19 @@ padding:0
                           </widget>
                          </item>
                         </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="colNonCollection">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Non-Collection items</string>
+                        </property>
                        </widget>
                       </item>
                      </layout>
