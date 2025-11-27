@@ -2835,8 +2835,8 @@ padding:0
                           <rect>
                            <x>0</x>
                            <y>0</y>
-                           <width>929</width>
-                           <height>741</height>
+                           <width>46</width>
+                           <height>36</height>
                           </rect>
                          </property>
                          <property name="styleSheet">
@@ -3316,8 +3316,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>947</width>
-                    <height>536</height>
+                    <width>64</width>
+                    <height>18</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -4676,9 +4676,9 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-337</y>
+                 <y>0</y>
                  <width>663</width>
-                 <height>1107</height>
+                 <height>1135</height>
                 </rect>
                </property>
                <property name="styleSheet">
@@ -5049,6 +5049,19 @@ padding: 0px;
                         </property>
                        </widget>
                       </item>
+                      <item>
+                       <widget class="QCheckBox" name="itemLibraryWearNW">
+                        <property name="font">
+                         <font>
+                          <family>SystemHud</family>
+                          <pointsize>15</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>NO WEAR</string>
+                        </property>
+                       </widget>
+                      </item>
                      </layout>
                     </widget>
                    </item>
@@ -5102,7 +5115,7 @@ padding:0
                          <property name="geometry">
                           <rect>
                            <x>0</x>
-                           <y>-365</y>
+                           <y>0</y>
                            <width>869</width>
                            <height>656</height>
                           </rect>
