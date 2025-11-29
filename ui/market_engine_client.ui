@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1123</width>
-    <height>958</height>
+    <height>783</height>
    </rect>
   </property>
   <property name="font">
@@ -1814,7 +1814,7 @@ padding:0px;
 }</string>
              </property>
              <property name="currentIndex">
-              <number>2</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="stackedProfitableTradeupsManager">
               <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -3316,8 +3316,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>64</width>
-                    <height>18</height>
+                    <width>947</width>
+                    <height>361</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3722,7 +3722,7 @@ padding: 0px;
 }</string>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="settingsStackedSonar">
            <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -3881,8 +3881,8 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>0</y>
-                 <width>315</width>
+                 <y>-480</y>
+                 <width>663</width>
                  <height>1182</height>
                 </rect>
                </property>
@@ -3967,7 +3967,7 @@ padding: 0px;
                         </item>
                         <item>
                          <property name="text">
-                          <string>GPUs</string>
+                          <string>GPU (BETA)</string>
                          </property>
                         </item>
                        </widget>
@@ -4406,7 +4406,7 @@ padding: 0px;
                          <string/>
                         </property>
                         <property name="maximum">
-                         <number>1000</number>
+                         <number>100000</number>
                         </property>
                         <property name="singleStep">
                          <number>10</number>
@@ -4677,7 +4677,7 @@ padding: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>663</width>
+                 <width>514</width>
                  <height>1135</height>
                 </rect>
                </property>
