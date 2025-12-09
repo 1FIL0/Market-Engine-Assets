@@ -3316,8 +3316,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>947</width>
-                    <height>361</height>
+                    <width>64</width>
+                    <height>18</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -3881,7 +3881,7 @@ padding: 0px;
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-480</y>
+                 <y>0</y>
                  <width>663</width>
                  <height>1182</height>
                 </rect>
@@ -4162,7 +4162,7 @@ padding: 0px;
                          </font>
                         </property>
                         <property name="text">
-                         <string>Covert</string>
+                         <string>Covert (Beta)</string>
                         </property>
                        </widget>
                       </item>
