@@ -460,7 +460,7 @@ padding:0;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="centralHome">
        <layout class="QHBoxLayout" name="horizontalLayout_35">
@@ -3316,8 +3316,8 @@ padding:0;
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>64</width>
-                    <height>18</height>
+                    <width>947</width>
+                    <height>361</height>
                    </rect>
                   </property>
                   <property name="styleSheet">
@@ -4162,7 +4162,7 @@ padding: 0px;
                          </font>
                         </property>
                         <property name="text">
-                         <string>Covert (Beta)</string>
+                         <string>Covert (Very Beta - Use at your own risk)</string>
                         </property>
                        </widget>
                       </item>
